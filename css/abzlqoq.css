@@ -1,0 +1,72 @@
+
+
+// *************************** demo
+$gutter: 30px;
+$container-gutter-mobile: $gutter;
+$container-gutter-tablet: 50px;
+$container-gutter-desktop: 70px;
+
+// page dimensions
+$page-width: 1290px;
+$page-limit: $page-width + ($container-gutter-desktop * 2);
+
+// Predefined breakpoints
+$min-mobile: 419px;
+$min-tablet: 719px;
+$min-desktop: 1079px;
+
+@function strip-unit($number) {
+  @if type-of($number) == 'number' and not unitless($number) {
+    @return $number / ($number * 0 + 1);
+  }
+
+  @return $number;
+}
+
+@mixin responsive-font($min-size: $font-size-min, $size: $font-size, $limit: $page-limit) {
+  $scale-font-enable: global-variable-exists(scale);
+
+  $unitless-min: strip-unit($min-size);
+  $unitless-size: strip-unit($size);
+  $baseline: strip-unit($min-mobile);
+  $font-multiplier: (($unitless-size - $unitless-min) / (strip-unit($limit) - $baseline));
+  $font-baseline: ($unitless-min - $font-multiplier * $baseline);
+
+  @if $unitless-min >= $unitless-size {
+    @warn 'Responsive font: min-size equal or greater than size';
+  }
+
+  font-size: #{$unitless-min}px;
+
+  @if $scale-font-enable == true {
+    font-size: calc(#{$unitless-min}px * #{var(--scale-font)});
+  }
+
+  @media (min-width: $min-mobile) {
+    font-size: #{$unitless-min}px;
+
+    @if $scale-font-enable == true {
+      font-size:
+        calc(
+          (#{$font-multiplier} * #{100vw} + (#{$font-baseline}px)) * #{var(--scale-font)}
+        );
+    }
+
+    @else {
+      font-size: calc((#{$font-multiplier} * #{100vw} + (#{$font-baseline}px)));
+    }
+  }
+
+  @media (min-width: $limit) {
+    font-size: #{$unitless-size}px;
+
+    @if $scale-font-enable == true {
+      font-size: calc(#{$unitless-size}px * #{var(--scale-font)});
+    }
+  }
+}
+
+// Alias for responsive-font mixin
+@mixin rf($args...) {
+  @include responsive-font($args...);
+}
