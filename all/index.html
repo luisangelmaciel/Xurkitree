@@ -1,0 +1,1216 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Follow Me! </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Catálogo de iconos Fontawesome https://fontawesome.com/v5.15/icons?d=gallery&p=2&s=regular&m=free -->
+    <script src="https://kit.fontawesome.com/1d9115e34a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <style>
+        body {
+            width: 100%;
+            height: auto;
+        }
+        
+        a {
+            color: black;
+        }
+        
+        a:hover {
+            color: #5079ff;
+        }
+        
+        .wrapper {
+            display: inline-flexbox;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            align-content: center;
+            position: absolute;
+        }
+        
+        .btn-lamp {
+            font-family: "Montserrat", sans-serif;
+            color: black;
+            border: solid 3px black;
+            font-size: 25px;
+            background-color: black;
+            width: 400px;
+            height: 50px;
+            border-radius: 30px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            cursor: pointer;
+            transition: all 0.5s ease;
+            position: relative;
+            overflow: hidden;
+            box-shadow: #000000;
+            margin: 18px;
+        }
+        
+        .btn-lamp p {
+            margin: 0;
+            padding: 0;
+        }
+        
+        .btn-lamp:before {
+            content: "luis angel maciel";
+            position: absolute;
+            left: 50%;
+            top: 50.9%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 20px;
+            background-color: black;
+            width: 100%;
+            height: 100%;
+            border-radius: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: all 0.5s ease;
+        }
+        
+        .btn-lamp:hover {
+            background-color: white;
+        }
+        
+        .btn-lamp:hover:before {
+            top: -50%;
+        }
+        
+        .btn-xiib {
+            font-family: "Montserrat", sans-serif;
+            color: black;
+            border: solid 3px black;
+            font-size: 25px;
+            background-color: black;
+            width: 400px;
+            height: 50px;
+            border-radius: 30px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            cursor: pointer;
+            transition: all 0.5s ease;
+            position: relative;
+            overflow: hidden;
+            box-shadow: #000000;
+            margin: 18px;
+        }
+        
+        .btn-xiib p {
+            margin: 0;
+            padding: 0;
+        }
+        
+        .btn-xiib:before {
+            content: "xiiber";
+            position: absolute;
+            left: 50%;
+            top: 50.9%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 20px;
+            background-color: black;
+            width: 100%;
+            height: 100%;
+            border-radius: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: all 0.5s ease;
+        }
+        
+        .btn-xiib:hover {
+            background-color: white;
+        }
+        
+        .btn-xiib:hover:before {
+            top: -50%;
+        }
+        
+        .btn-drag {
+            font-family: "Montserrat", sans-serif;
+            color: black;
+            border: solid 3px black;
+            font-size: 25px;
+            background-color: black;
+            width: 400px;
+            height: 50px;
+            border-radius: 30px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            cursor: pointer;
+            transition: all 0.5s ease;
+            position: relative;
+            overflow: hidden;
+            box-shadow: #000000;
+            margin: 18px;
+        }
+        
+        .btn-drag p {
+            margin: 0;
+            padding: 0;
+        }
+        
+        .btn-drag:before {
+            content: "dragvesti";
+            position: absolute;
+            left: 50%;
+            top: 50.9%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 20px;
+            background-color: black;
+            width: 100%;
+            height: 100%;
+            border-radius: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: all 0.5s ease;
+        }
+        
+        .btn-drag:hover {
+            background-color: white;
+        }
+        
+        .btn-drag:hover:before {
+            top: -50%;
+        }
+        
+        .btn-instagram {
+            font-family: "Montserrat", sans-serif;
+            color: black;
+            border: solid 3px black;
+            font-size: 25px;
+            background-color: black;
+            width: 400px;
+            height: 50px;
+            border-radius: 30px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            cursor: pointer;
+            transition: all 0.5s ease;
+            position: relative;
+            overflow: hidden;
+            box-shadow: #000000;
+            margin: 18px;
+        }
+        
+        .btn-instagram p {
+            margin: 0;
+            padding: 0;
+        }
+        
+        .btn-instagram:before {
+            content: "instagram";
+            position: absolute;
+            left: 50%;
+            top: 50.9%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 20px;
+            background-color: black;
+            width: 100%;
+            height: 100%;
+            border-radius: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: all 0.5s ease;
+        }
+        
+        .btn-instagram:hover {
+            background-color: white;
+        }
+        
+        .btn-instagram:hover:before {
+            top: -50%;
+        }
+        /* */
+        
+        .btn-instagram {
+            font-family: "Montserrat", sans-serif;
+            color: black;
+            border: solid 3px black;
+            font-size: 25px;
+            background-color: black;
+            width: 400px;
+            height: 50px;
+            border-radius: 30px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            cursor: pointer;
+            transition: all 0.5s ease;
+            position: relative;
+            overflow: hidden;
+            box-shadow: #000000;
+            margin: 18px;
+        }
+        
+        .btn-instagram p {
+            margin: 0;
+            padding: 0;
+        }
+        
+        .btn-instagram:before {
+            content: "instagram";
+            position: absolute;
+            left: 50%;
+            top: 50.9%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 20px;
+            background-color: black;
+            width: 100%;
+            height: 100%;
+            border-radius: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: all 0.5s ease;
+        }
+        
+        .btn-instagram:hover {
+            background-color: white;
+        }
+        
+        .btn-instagram:hover:before {
+            top: -50%;
+        }
+        /* */
+        
+        .btn-facebook {
+            font-family: "Montserrat", sans-serif;
+            color: black;
+            border: solid 3px black;
+            font-size: 25px;
+            background-color: black;
+            width: 400px;
+            height: 50px;
+            border-radius: 30px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            cursor: pointer;
+            transition: all 0.5s ease;
+            position: relative;
+            overflow: hidden;
+            box-shadow: #000000;
+            margin: 18px;
+        }
+        
+        .btn-facebook p {
+            margin: 0;
+            padding: 0;
+        }
+        
+        .btn-facebook:before {
+            content: "facebook";
+            position: absolute;
+            left: 50%;
+            top: 50.9%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 20px;
+            background-color: black;
+            width: 100%;
+            height: 100%;
+            border-radius: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: all 0.5s ease;
+        }
+        
+        .btn-facebook:hover {
+            background-color: white;
+        }
+        
+        .btn-facebook:hover:before {
+            top: -50%;
+        }
+        /* */
+        
+        .btn-pinterest {
+            font-family: "Montserrat", sans-serif;
+            color: black;
+            border: solid 3px black;
+            font-size: 25px;
+            background-color: black;
+            width: 400px;
+            height: 50px;
+            border-radius: 30px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            cursor: pointer;
+            transition: all 0.5s ease;
+            position: relative;
+            overflow: hidden;
+            box-shadow: #000000;
+            margin: 18px;
+        }
+        
+        .btn-pinterest p {
+            margin: 0;
+            padding: 0;
+        }
+        
+        .btn-pinterest:before {
+            content: "pinterest";
+            position: absolute;
+            left: 50%;
+            top: 50.9%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 20px;
+            background-color: black;
+            width: 100%;
+            height: 100%;
+            border-radius: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: all 0.5s ease;
+        }
+        
+        .btn-pinterest:hover {
+            background-color: white;
+        }
+        
+        .btn-pinterest:hover:before {
+            top: -50%;
+        }
+        /* */
+        
+        .btn-pinterest {
+            font-family: "Montserrat", sans-serif;
+            color: black;
+            border: solid 3px black;
+            font-size: 25px;
+            background-color: black;
+            width: 400px;
+            height: 50px;
+            border-radius: 30px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            cursor: pointer;
+            transition: all 0.5s ease;
+            position: relative;
+            overflow: hidden;
+            box-shadow: #000000;
+            margin: 18px;
+        }
+        
+        .btn-pinterest p {
+            margin: 0;
+            padding: 0;
+        }
+        
+        .btn-pinterest:before {
+            content: "pinterest";
+            position: absolute;
+            left: 50%;
+            top: 50.9%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 20px;
+            background-color: black;
+            width: 100%;
+            height: 100%;
+            border-radius: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: all 0.5s ease;
+        }
+        
+        .btn-pinterest:hover {
+            background-color: white;
+        }
+        
+        .btn-pinterest:hover:before {
+            top: -50%;
+        }
+        /* */
+        
+        .btn-twitter {
+            font-family: "Montserrat", sans-serif;
+            color: black;
+            border: solid 3px black;
+            font-size: 25px;
+            background-color: black;
+            width: 400px;
+            height: 50px;
+            border-radius: 30px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            cursor: pointer;
+            transition: all 0.5s ease;
+            position: relative;
+            overflow: hidden;
+            box-shadow: #000000;
+            margin: 18px;
+        }
+        
+        .btn-twitter p {
+            margin: 0;
+            padding: 0;
+        }
+        
+        .btn-twitter:before {
+            content: "twitter";
+            position: absolute;
+            left: 50%;
+            top: 50.9%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 20px;
+            background-color: black;
+            width: 100%;
+            height: 100%;
+            border-radius: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: all 0.5s ease;
+        }
+        
+        .btn-twitter:hover {
+            background-color: white;
+        }
+        
+        .btn-twitter:hover:before {
+            top: -50%;
+        }
+        /* */
+        
+        .btn-youtube {
+            font-family: "Montserrat", sans-serif;
+            color: black;
+            border: solid 3px black;
+            font-size: 25px;
+            background-color: black;
+            width: 400px;
+            height: 50px;
+            border-radius: 30px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            cursor: pointer;
+            transition: all 0.5s ease;
+            position: relative;
+            overflow: hidden;
+            box-shadow: #000000;
+            margin: 18px;
+        }
+        
+        .btn-youtube p {
+            margin: 0;
+            padding: 0;
+        }
+        
+        .btn-youtube:before {
+            content: "youtube";
+            position: absolute;
+            left: 50%;
+            top: 50.9%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 20px;
+            background-color: black;
+            width: 100%;
+            height: 100%;
+            border-radius: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: all 0.5s ease;
+        }
+        
+        .btn-youtube:hover {
+            background-color: white;
+        }
+        
+        .btn-youtube:hover:before {
+            top: -50%;
+        }
+        /* */
+        
+        .btn-maps {
+            font-family: "Montserrat", sans-serif;
+            color: black;
+            border: solid 3px black;
+            font-size: 25px;
+            background-color: black;
+            width: 400px;
+            height: 50px;
+            border-radius: 30px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            cursor: pointer;
+            transition: all 0.5s ease;
+            position: relative;
+            overflow: hidden;
+            box-shadow: #000000;
+            margin: 18px;
+        }
+        
+        .btn-maps p {
+            margin: 0;
+            padding: 0;
+        }
+        
+        .btn-maps:before {
+            content: "maps";
+            position: absolute;
+            left: 50%;
+            top: 50.9%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 20px;
+            background-color: black;
+            width: 100%;
+            height: 100%;
+            border-radius: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: all 0.5s ease;
+        }
+        
+        .btn-maps:hover {
+            background-color: white;
+        }
+        
+        .btn-maps:hover:before {
+            top: -50%;
+        }
+        /* */
+        
+        .btn-envialov {
+            font-family: "Montserrat", sans-serif;
+            color: black;
+            border: solid 3px black;
+            font-size: 25px;
+            background-color: black;
+            width: 400px;
+            height: 50px;
+            border-radius: 30px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            cursor: pointer;
+            transition: all 0.5s ease;
+            position: relative;
+            overflow: hidden;
+            box-shadow: #000000;
+            margin: 18px;
+        }
+        
+        .btn-envialov p {
+            margin: 0;
+            padding: 0;
+        }
+        
+        .btn-envialov:before {
+            content: "envialov";
+            position: absolute;
+            left: 50%;
+            top: 50.9%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 20px;
+            background-color: black;
+            width: 100%;
+            height: 100%;
+            border-radius: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: all 0.5s ease;
+        }
+        
+        .btn-envialov:hover {
+            background-color: white;
+        }
+        
+        .btn-envialov:hover:before {
+            top: -50%;
+        }
+        /* */
+        
+        .btn-geus {
+            font-family: "Montserrat", sans-serif;
+            color: black;
+            border: solid 3px black;
+            font-size: 25px;
+            background-color: black;
+            width: 400px;
+            height: 50px;
+            border-radius: 30px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            cursor: pointer;
+            transition: all 0.5s ease;
+            position: relative;
+            overflow: hidden;
+            box-shadow: #000000;
+            margin: 18px;
+        }
+        
+        .btn-geus p {
+            margin: 0;
+            padding: 0;
+        }
+        
+        .btn-geus:before {
+            content: "geus";
+            position: absolute;
+            left: 50%;
+            top: 50.9%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 20px;
+            background-color: black;
+            width: 100%;
+            height: 100%;
+            border-radius: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: all 0.5s ease;
+        }
+        
+        .btn-geus:hover {
+            background-color: white;
+        }
+        
+        .btn-geus:hover:before {
+            top: -50%;
+        }
+        /* */
+        
+        .btn-moms-pizza {
+            font-family: "Montserrat", sans-serif;
+            color: black;
+            border: solid 3px black;
+            font-size: 25px;
+            background-color: black;
+            width: 400px;
+            height: 50px;
+            border-radius: 30px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            cursor: pointer;
+            transition: all 0.5s ease;
+            position: relative;
+            overflow: hidden;
+            box-shadow: #000000;
+            margin: 18px;
+        }
+        
+        .btn-moms-pizza p {
+            margin: 0;
+            padding: 0;
+        }
+        
+        .btn-moms-pizza:before {
+            content: "moms´s pizza";
+            position: absolute;
+            left: 50%;
+            top: 50.9%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 20px;
+            background-color: black;
+            width: 100%;
+            height: 100%;
+            border-radius: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: all 0.5s ease;
+        }
+        
+        .btn-moms-pizza:hover {
+            background-color: white;
+        }
+        
+        .btn-moms-pizza:hover:before {
+            top: -50%;
+        }
+        /* */
+        
+        .btn-Mueganitos {
+            font-family: "Montserrat", sans-serif;
+            color: black;
+            border: solid 3px black;
+            font-size: 25px;
+            background-color: black;
+            width: 400px;
+            height: 50px;
+            border-radius: 30px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            cursor: pointer;
+            transition: all 0.5s ease;
+            position: relative;
+            overflow: hidden;
+            box-shadow: #000000;
+            margin: 18px;
+        }
+        
+        .btn-Mueganitos p {
+            margin: 0;
+            padding: 0;
+        }
+        
+        .btn-Mueganitos:before {
+            content: "mueganitos";
+            position: absolute;
+            left: 50%;
+            top: 50.9%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 20px;
+            background-color: black;
+            width: 100%;
+            height: 100%;
+            border-radius: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: all 0.5s ease;
+        }
+        
+        .btn-Mueganitos:hover {
+            background-color: white;
+        }
+        
+        .btn-Mueganitos:hover:before {
+            top: -50%;
+        }
+        /* */
+        
+        .btn-Hazlo-Drag {
+            font-family: "Montserrat", sans-serif;
+            color: black;
+            border: solid 3px black;
+            font-size: 25px;
+            background-color: black;
+            width: 400px;
+            height: 50px;
+            border-radius: 30px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            cursor: pointer;
+            transition: all 0.5s ease;
+            position: relative;
+            overflow: hidden;
+            box-shadow: #000000;
+            margin: 18px;
+        }
+        
+        .btn-Hazlo-Drag p {
+            margin: 0;
+            padding: 0;
+        }
+        
+        .btn-Hazlo-Drag:before {
+            content: "hazlo drag";
+            position: absolute;
+            left: 50%;
+            top: 50.9%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 20px;
+            background-color: black;
+            width: 100%;
+            height: 100%;
+            border-radius: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: all 0.5s ease;
+        }
+        
+        .btn-Hazlo-Drag:hover {
+            background-color: white;
+        }
+        
+        .btn-Hazlo-Drag:hover:before {
+            top: -50%;
+        }
+        /* */
+        
+        .btn-Paralosmonster {
+            font-family: "Montserrat", sans-serif;
+            color: black;
+            border: solid 3px black;
+            font-size: 25px;
+            background-color: black;
+            width: 400px;
+            height: 50px;
+            border-radius: 30px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            cursor: pointer;
+            transition: all 0.5s ease;
+            position: relative;
+            overflow: hidden;
+            box-shadow: #000000;
+            margin: 18px;
+        }
+        
+        .btn-Paralosmonster p {
+            margin: 0;
+            padding: 0;
+        }
+        
+        .btn-Paralosmonster:before {
+            content: "paralos.monster";
+            position: absolute;
+            left: 50%;
+            top: 50.9%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 20px;
+            background-color: black;
+            width: 100%;
+            height: 100%;
+            border-radius: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: all 0.5s ease;
+        }
+        
+        .btn-Paralosmonster:hover {
+            background-color: white;
+        }
+        
+        .btn-Paralosmonster:hover:before {
+            top: -50%;
+        }
+        /* */
+        
+        .btn-HiHelloMonster {
+            font-family: "Montserrat", sans-serif;
+            color: black;
+            border: solid 3px black;
+            font-size: 25px;
+            background-color: black;
+            width: 400px;
+            height: 50px;
+            border-radius: 30px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            cursor: pointer;
+            transition: all 0.5s ease;
+            position: relative;
+            overflow: hidden;
+            box-shadow: #000000;
+            margin: 18px;
+        }
+        
+        .btn-HiHelloMonster p {
+            margin: 0;
+            padding: 0;
+        }
+        
+        .btn-HiHelloMonster:before {
+            content: "hihello.monster";
+            position: absolute;
+            left: 50%;
+            top: 50.9%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 20px;
+            background-color: black;
+            width: 100%;
+            height: 100%;
+            border-radius: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: all 0.5s ease;
+        }
+        
+        .btn-HiHelloMonster:hover {
+            background-color: white;
+        }
+        
+        .btn-HiHelloMonster:hover:before {
+            top: -50%;
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+        <div class="btn-xiib">
+            <a href="https://gmail.com" target="_blank "><i class="fab fa-google" aria-hidden="true"></i></a>
+            <a href="https://www.youtube.com/channel/UC4kslfW6LE-g2Rs33G9jlXQ " target="_blank "><i class="fab fa-youtube" aria-hidden="true"></i></a>
+            <a href="https://www.pinterest.com.mx/xiiber/_created/" target="_blank "><i class="fa fa-pinterest" aria-hidden="true"></i></a>
+            <a href="https://www.tripadvisor.com.mx/Profile/xiiber" target="_blank "><i class="fa fa-tripadvisor" aria-hidden="true"></i></a>
+            <a href="https://www.instagram.com/xiibertravel/?hl=es " target="_blank "> <i class="fa fa-instagram" aria-hidden="true"></i></a>
+            <a href="https://www.google.com/maps?q=xiiber&um=1&ie=UTF-8&sa=X&ved=2ahUKEwjS_6Ll9cTwAhUOKqwKHRq3CLUQ_AUoAXoECAEQAw" target="_blank "><i class="far fa-map" aria-hidden="true"></i></a>
+            <a href="https://xiiber.tumblr.com/" target="_blank "> <i class="fa fa-tumblr" aria-hidden="true"></i></a>
+            <a href="https://twitter.com/xiibertravel " target="_blank "><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            <a href="https://www.xiiber.com/ " target="_blank "><i class="fa fa-suitcase" aria-hidden="true"></i></a>
+            <a href="https://tepozspa.xiiber.com/ " target="_blank "><i class="far fa-sun"></i></a>
+        </div>
+
+        <div class="btn-lamp">
+            <a href="https://dribbble.com/luisangelmaciel" target="_blank "><i class="fab fa-dribbble" aria-hidden="true"></i></a>
+            <a href="http://github.com/luisangelmaciel" target="_blank "><i class="fab fa-github" aria-hidden="true"></i></a>
+            <a href="https://codepen.io/luisangelmaciel" target="_blank "><i class="fab fa-codepen" aria-hidden="true"></i></a>
+            <a href="https://twitter.com/luisangelmaciel" target="_blank "><i class="fab fa-twitter" aria-hidden="true"></i></a>
+            <a href="https://www.youtube.com/channel/UC4CiuTWvFdk6Y8qkbLvMTUQ" target="_blank "><i class="fa fa-youtube" aria-hidden="true"></i></a>
+            <a href="https://mx.linkedin.com/in/luis-angel-maciel-padilla-69636419" target="_new "><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+            <a href="https://facebook.com/luisangelmaciel " target="_new "><i class="fa fa-facebook" aria-hidden="true"></i></a>
+            <a href="https://luisangel.maciel.xiiber.com/ " target="_new "><i class="fa fa-tree" aria-hidden="true"></i></a>
+            <a href="https://instagram.com/luisangelmaci3l " target="_new "><i class="fa fa-instagram" aria-hidden="true"></i></a>
+            <a href="https://codestats.net/users/luisangelmaciel " target="_new "><img src="https://codestats.net/assets/frontend/images/Logo-92e1d93256eae2d7dde539f1df59b06c.svg?vsn=d " alt=" CodeStats " width="30px " height="30px "></a>
+            <a href="https://freecodecamp.org/luisangelmaciel " target="_new "><i class="fa fa-code" aria-hidden="true"></i></a>
+        </div>
+
+        <div class="btn-drag">
+            <a href="https://dragvesti.github.io/home/ " target="_blank "><i class="fa fa-laptop" aria-hidden="true"></i></a>
+            <a href="https://www.google.com/maps/place/Dragvesti/@19.452384,-99.1200055,17z/data=!4m5!3m4!1s0x85d1f9f8516a9b8f:0xc9f2b28c568c85f2!8m2!3d19.452384!4d-99.1178168?hl=es-419 " target="_blank "><i class="fa fa-map-signs" aria-hidden="true"></i></a>
+            <a href="https://www.youtube.com/watch?v=nrPKohTWF2Y " target="_blank "><i class="fa fa-youtube" aria-hidden="true"></i></a>
+            <a href="https://www.youtube.com/channel/UCcvSQb1ZAjU1E_Pfy7PeXxA " target="_blank "><i class="fab fa-instagram    "></i></a>
+            <a href="https://www.instagram.com/dragvesti/?hl=es " target="_blank "><i class="fa fa-instagram" aria-hidden="true"></i></a>
+            <a href="https://twitter.com/Dragvesti_ " target="_blank "><i class="fa fa-twitter" aria-hidden="true"></i> </a>
+            <a href="https://www.pinterest.com.mx/ddragvesti/_saved/ " target="_blank "><i class="fa fa-pinterest" aria-hidden="true"></i></a>
+        </div>
+
+        <div class="btn-instagram">
+            <a href="https://www.instagram.com/mueganitosm6/ " target="_blank "><i class="fa fa-user-circle-o" aria-hidden="true"></i></a>
+            <a href="https://www.instagram.com/luisangelmaci3l/ " target="_blank "><i class="fa fa-user" aria-hidden="true"></i></a>
+            <a href="https://www.instagram.com/hazlodrag/ " target="_blank "><i class="fa fa-user-md" aria-hidden="true"></i></a>
+            <a href="https://www.instagram.com/dragvesti/?hl=es " target="_blank "><i class="fa fa-user-secret" aria-hidden="true"></i></a>
+            <a href="https://www.instagram.com/xiibertravel/?hl=es " target="_blank "><i class="fa fa-map" aria-hidden="true"></i></a>
+            <a href="https://www.instagram.com/visitmexicogay/" target=" _blank "><i class="fa fa-map-marker" aria-hidden="true"></i></a>
+            <a href="https://www.instagram.com/envialov.ok/" target=" _blank "><i class="fa fa-user-times" aria-hidden="true"></i></a>
+        </div>
+
+        <div class="btn-facebook">
+            <a href="https://www.facebook.com/joseluis.sayas.39 " target="_blank ">Jose Luis Sayas</a>
+            <a href="https://www.facebook.com/DragvestiMX/ " target="_blank ">Dragvesti MX</a>
+            <a href="https://www.facebook.com/dragvesti/ " target="_blank ">Dragvesti</a>
+            <a href="https://www.facebook.com/mwoodsshow/ " target="_blank ">Monica Woods</a>
+            <a href="https://www.facebook.com/Hazlo-Drag-1729791767110821/ " target="_blank ">Hazlo Drag</a>
+            <a href="https://www.facebook.com/groups/calendariog/ " target="_blank ">Grupo CG</a>
+            <a href="https://www.facebook.com/Laboratoriodragqueenm%C3%A9xico-1040556506021716/ " target="_blank ">Laboratorio</a>
+            <a href="https://www.facebook.com/CGTravelMexico " target="_blank ">CG Travel</a>
+            <a href="https://www.facebook.com/irisxcqueen/ " target="_blank ">Iris XC Queen</a>
+            <a href="https://www.facebook.com/CapitolFashionOK " target="_blank ">Capitol Fashion</a>
+            <a href="https://www.facebook.com/Xiiber-107031821053684 " target="_blank ">Xiiber</a>
+            <a href="https://www.facebook.com/Mueganitosm6 " target="_blank ">LMueganitos</a>
+            <a href="https://www.facebook.com/CGTravelMexico " target="_blank ">CG Travel</a>
+            <a href="https://www.facebook.com/Laboratoriodragqueenm%C3%A9xico-1040556506021716/ " target="_blank ">Laboratorio</a>
+            <a href="https://www.facebook.com/CGTravelMexico " target="_blank ">CG Travel</a>
+        </div>
+
+        <div class="btn-pinterest">
+            <a href="https://www.pinterest.com.mx/mueganitosm6/_saved/ " target="_blank ">100 Mueganitos</a>
+            <a href="https://www.pinterest.com.mx/mexicogay/_saved/ " target="_blank ">50 Visit Mexico Gay </a>
+            <a href="https://www.pinterest.com.mx/hihellomonster/_saved/ " target="_blank ">50 Hi hello</a>
+            <a href="https://www.pinterest.com.mx/paralosmonster/_saved/ " target="_blank ">50 Para los monster</a>
+            <a href="https://www.pinterest.com.mx/turismogaymexico/_saved/ " target="_blank ">50 Turismo gay mx</a>
+            <a href="https://www.pinterest.com.mx/busatepozspa/_saved/ " target="_blank ">30 Bus a Tepozspa</a>
+            <a href="https://www.pinterest.com.mx/gayxiiber/_saved/" target="_blank ">10 Xiber Travel</a>
+            <a href="https://www.pinterest.com.mx/xiiber/_created/ " target="_blank ">Xiiber</a>
+            <a href="https://www.pinterest.com.mx/ddragvesti/_saved/ " target="_blank ">Dragvesti</a>
+            <a href="https://www.pinterest.com.mx/fiestasgaycdmx/_saved/" target="_blank ">Fiestas Gay CDMX</a>
+            <a href="https://www.pinterest.com.mx/xibertravel/_saved/" target="_blank ">Xiber Travel</a>
+        </div>
+
+        <div class="btn-twitter">
+            <a href="https://twitter.com/hazlodrag " target="_blank "><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            <a href="https://twitter.com/paralosmonster " target="_blank "><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+            <a href="https://twitter.com/xiibertravel " target="_blank "><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            <a href="https://twitter.com/ViajesMexicoGay " target="_blank "><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+            <a href="https://twitter.com/VisitMexicoGay " target="_blank "><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            <a href="https://twitter.com/luisangelmaciel " target="_blank "><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+            <a href="https://twitter.com/atepozspa " target="_blank "><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            <a href="https://twitter.com/xiibertech " target="_blank "><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+            <a href="https://twitter.com/cgtravelmexico " target="_blank "><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            <a href="https://twitter.com/FiestasGay_CDMX" target="_blank "><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+            <a href="https://twitter.com/Dragvesti_ " target="_blank "><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            <a href="https://twitter.com/PdTuWeyCogeRico " target="_blank "><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+            <a href="https://twitter.com/envialov " target="_blank "><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            <a href="https://twitter.com/irisxcqueen " target="_blank "><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+            <a href="https://twitter.com/BDvich " target="_blank "><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            <a href="https://twitter.com/CamioneraTraves" target="_blank "><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+            <a href="https://twitter.com/LuisEmoji" target="_blank "><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            <a href="https://twitter.com/gayxiiber" target="_blank "><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+        </div>
+
+        <div class="btn-youtube">
+            <a href="https://www.youtube.com/channel/UCzg4RuIrSiqpMd5PkFfSZbQ " target="_blank ">150 Ixxi</a>
+            <a href="https://www.youtube.com/channel/UCpY6sR6MaFUPGUh6XfbhcOQ " target="_blank ">100 Lennox</a>
+            <a href="https://www.youtube.com/watch?v=tVjrMS8lKz4&list=UU1xH09N4f90v1mJ2f5lXkyg " target="_blank ">285 CUUIns</a>
+            <a href="https://www.youtube.com/channel/UC4CiuTWvFdk6Y8qkbLvMTUQ/featured?view_as=subscriber " target="_blank ">Mercancia</a>
+            <a href="https://www.youtube.com/watch?v=nrPKohTWF2Y " target="_blank ">Dragvesti</a>
+            <a href="https://www.youtube.com/channel/UCcvSQb1ZAjU1E_Pfy7PeXxA " target="_blank ">Dragvesti_</a>
+            <a href="https://www.youtube.com/watch?v=Vh1KCpTHukc " target="_blank ">Agahta Toro</a>
+            <a href="https://www.youtube.com/watch?v=wPbUGw0dQHE " target="_blank ">Hous of Toro</a>
+            <a href="https://www.youtube.com/channel/UCFAKx_KyUH7rdNiKYQw1cIg " target="_blank ">Soy Damian</a>
+            <a href="https://www.youtube.com/channel/UC9vhvu3d73csmIPfts7OsVg " target="_blank ">Iris XC Queen</a>
+            <a href="https://www.youtube.com/channel/UCJwUpTM0tdt7ZEFgdTLnIoA" target="_blank ">Becky D´Vich</a>
+            <a href="https://www.youtube.com/user/NachinStar" target="_blank ">Yuni K Feem</a>
+            <a href="https://www.youtube.com/watch?v=_aashV61Img" target="_blank ">Dalila Velvet</a>
+        </div>
+
+        <div class="btn-maps">
+            <a href="https://www.google.com.mx/maps/place/Mueganitosm6/@19.452384,-99.1178168,17z/data=!4m12!1m6!3m5!1s0x85d1f93e7f578be7:0x42d9181f65122ad5!2sMueganitosm6!8m2!3d19.452384!4d-99.1178168!3m4!1s0x85d1f93e7f578be7:0x42d9181f65122ad5!8m2!3d19.452384!4d-99.1178168?hl=es "
+                target="_blank ">Mueganitos</a>
+            <a href="https://www.google.com/maps/place/Dragvesti/@19.452384,-99.1200055,17z/data=!4m5!3m4!1s0x85d1f9f8516a9b8f:0xc9f2b28c568c85f2!8m2!3d19.452384!4d-99.1178168?hl=es-419 " target="_blank "> Dragvesti</a>
+            <a href="https://www.google.com.mx/maps/place/Xiiber/@19.350687,-99.1486379,17z/data=!4m12!1m6!3m5!1s0x85d1fdea83072205:0x762481276f0ce59d!2sXiiber!8m2!3d19.350682!4d-99.1464492!3m4!1s0x85d1fdea83072205:0x762481276f0ce59d!8m2!3d19.350682!4d-99.1464492?hl=es "
+                target="_blank ">Xiiber</a>
+            <a href="https://www.google.com.mx/maps/place/Mueganitosm6/@19.452384,-99.1178168,17z/data=!4m12!1m6!3m5!1s0x85d1f93e7f578be7:0x42d9181f65122ad5!2sMueganitosm6!8m2!3d19.452384!4d-99.1178168!3m4!1s0x85d1f93e7f578be7:0x42d9181f65122ad5!8m2!3d19.452384!4d-99.1178168?hl=es "
+                target="_blank ">Moms Pizza</a>
+            <a href="https://www.google.com.mx/maps/place/Hi+Hello/@19.3617364,-99.070551,17z/data=!4m5!3m4!1s0x85d1fd4a80885ddf:0x427dfc24f701179e!8m2!3d19.3617314!4d-99.0683623?hl=es " target="_blank ">Hi Hello</a>
+            <a href=" https://www.google.com.mx/maps/place/Geus/@19.361627,-99.0704984,17z/data=!4m5!3m4!1s0x85d1fd4d12102a6d:0xef030c32e813b53d!8m2!3d19.361622!4d-99.0683097?hl=es " target="_blank ">gEUS</a>
+        </div>
+
+        <div class="btn-envialov">
+            <a href="https://twitter.com/envialov " target="_blank ">@envialov</a>
+        </div>
+
+        <div class="btn-geus">
+            <a href=" https://www.google.com.mx/maps/place/Geus/@19.361627,-99.0704984,17z/data=!4m5!3m4!1s0x85d1fd4d12102a6d:0xef030c32e813b53d!8m2!3d19.361622!4d-99.0683097?hl=es " target="_blank ">gEUS</a>
+        </div>
+
+        <div class="btn-moms-pizza">
+            <a href="https://www.google.com.mx/maps/place/Mueganitosm6/@19.452384,-99.1178168,17z/data=!4m12!1m6!3m5!1s0x85d1f93e7f578be7:0x42d9181f65122ad5!2sMueganitosm6!8m2!3d19.452384!4d-99.1178168!3m4!1s0x85d1f93e7f578be7:0x42d9181f65122ad5!8m2!3d19.452384!4d-99.1178168?hl=es "
+                target="_blank ">Moms Pizza</a>
+        </div>
+
+        <div class="btn-Hazlo-Drag">
+            <a href="https://www.instagram.com/hazlodrag/ " target="_blank ">Instagram</a>
+            <a href="https://twitter.com/hazlodrag " target="_blank ">Twitter</a>
+        </div>
+
+        <div class="btn-Mueganitos">
+            <a href="https://www.youtube.com/channel/UC44mqzi9iAbDxAekDx1YFLQ " target="_blank ">Youtube</a>
+            <a href="https://www.google.com.mx/maps/place/Mueganitosm6/@19.452384,-99.1178168,17z/data=!4m12!1m6!3m5!1s0x85d1f93e7f578be7:0x42d9181f65122ad5!2sMueganitosm6!8m2!3d19.452384!4d-99.1178168!3m4!1s0x85d1f93e7f578be7:0x42d9181f65122ad5!8m2!3d19.452384!4d-99.1178168?hl=es "
+                target="_blank ">Maps</a>
+            <a href="https://www.pinterest.com.mx/mueganitosm6/_saved/ " target="_blank ">Pinterest</a>
+            <a href="https://www.instagram.com/mueganitosm6/ " target="_blank ">Instagram</a>
+        </div>
+
+        <div class="btn-Paralosmonster">
+            <a href="https://www.paralos.monster/ " target="_blank ">Paralos.monster</a>
+            <a href="https://twitter.com/paralosmonster " target="_blank ">Twitter</a>
+            <a href="https://www.pinterest.com.mx/paralosmonster/_saved/ " target="_blank ">Para los monster</a>
+        </div>
+
+        <div class="btn-HiHelloMonster">
+            <a href="https://hihello.monster/ " target="_blank ">hihello.monster</a>
+            <a href="https://www.google.com.mx/maps/place/Hi+Hello/@19.3617364,-99.070551,17z/data=!4m5!3m4!1s0x85d1fd4a80885ddf:0x427dfc24f701179e!8m2!3d19.3617314!4d-99.0683623?hl=es " target="_blank ">Maps</a>
+            <a href="https://www.pinterest.com.mx/hihellomonster/_saved/ " target="_blank ">Hi hello</a>
+        </div>
+
+
+    </center>
+
+
+
+
+
+    <style>
+        @import url(https://fonts.googleapis.com/css?family=Roboto);
+        body {
+            height: 100%;
+            width: 100%;
+            background-color: #333;
+            color: grey;
+            font-family: 'Roboto';
+        }
+        
+        .container {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            flex-flow: wrap;
+            max-width: 960px;
+            height: 100%;
+            margin: 0 auto;
+            padding: 50px 20px;
+            border: none;
+        }
+        /* ------------ */
+        /* BASIC BUTTON */
+        /* ------------ */
+        
+        .a-up {
+            display: inline-block;
+            position: relative;
+            padding: 10px 15px;
+            margin: 50px;
+            color: whitesmoke;
+            letter-spacing: 2px;
+            text-decoration: none;
+        }
+        
+        .a-up.lift {
+            transition: all 700ms cubic-bezier(0.680, -0.550, 0.265, 1.550);
+        }
+        
+        .a-up.lift:after {
+            content: '';
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: 0 auto;
+            /* and empty box makes a shadow */
+            height: 2px;
+            width: 30%;
+            border-radius: 50%;
+            background-color: rgba(0, 0, 0, 0.2);
+            box-shadow: 0 0 8px 1px rgba(0, 0, 0, 0.4);
+            transition: all 700ms cubic-bezier(0.680, -0.550, 0.265, 1.550);
+        }
+        
+        .a-up.lift:hover {
+            color: white;
+            transform: translateY(-5px);
+        }
+        
+        .a-up.lift:hover:after {
+            bottom: -5px;
+            width: 40%;
+            background-color: rgba(0, 0, 0, 0.1);
+            box-shadow: 0 0 8px 1px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+    <div class=" container ">
+        <p class="lift a-up ">made with love & code</p>
+    </div>
+
+</body>
+
+</html>
