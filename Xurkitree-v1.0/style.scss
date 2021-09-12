@@ -1,0 +1,6473 @@
+@import "variables";
+
+@font-face {
+  font-family: '#{$icomoon-font-family}';
+  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?ze8b9n');
+  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?ze8b9n#iefix') format('embedded-opentype'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?ze8b9n') format('truetype'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.woff?ze8b9n') format('woff'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.svg?ze8b9n##{$icomoon-font-family}') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+i {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: '#{$icomoon-font-family}' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.logo-manhunt-net .path1 {
+  &:before {
+    content: $logo-manhunt-net-path1;  
+    color: rgb(55, 52, 53);
+  }
+}
+.logo-manhunt-net .path2 {
+  &:before {
+    content: $logo-manhunt-net-path2;  
+    margin-left: -1em;  
+    color: rgb(55, 52, 53);
+  }
+}
+.logo-manhunt-net .path3 {
+  &:before {
+    content: $logo-manhunt-net-path3;  
+    margin-left: -1em;  
+    color: rgb(254, 254, 254);
+  }
+}
+.logo-manhunt-net .path4 {
+  &:before {
+    content: $logo-manhunt-net-path4;  
+    margin-left: -1em;  
+    color: rgb(55, 52, 53);
+  }
+}
+.logo-manhunt-net .path5 {
+  &:before {
+    content: $logo-manhunt-net-path5;  
+    margin-left: -1em;  
+    color: rgb(254, 254, 254);
+  }
+}
+.logo-manhunt-net .path6 {
+  &:before {
+    content: $logo-manhunt-net-path6;  
+    margin-left: -1em;  
+    color: rgb(55, 52, 53);
+  }
+}
+.logo-manhunt-net .path7 {
+  &:before {
+    content: $logo-manhunt-net-path7;  
+    margin-left: -1em;  
+    color: rgb(254, 254, 254);
+  }
+}
+.logo-manhunt-net .path8 {
+  &:before {
+    content: $logo-manhunt-net-path8;  
+    margin-left: -1em;  
+    color: rgb(254, 254, 254);
+  }
+}
+.logo-manhunt-net .path9 {
+  &:before {
+    content: $logo-manhunt-net-path9;  
+    margin-left: -1em;  
+    color: rgb(239, 138, 20);
+  }
+}
+.logo-manhunt-net .path10 {
+  &:before {
+    content: $logo-manhunt-net-path10;  
+    margin-left: -1em;  
+    color: rgb(55, 52, 53);
+  }
+}
+.logo-google-my-business .path1 {
+  &:before {
+    content: $logo-google-my-business-path1;  
+    color: rgb(126, 172, 247);
+  }
+}
+.logo-google-my-business .path2 {
+  &:before {
+    content: $logo-google-my-business-path2;  
+    margin-left: -1em;  
+    color: rgb(126, 172, 247);
+  }
+}
+.logo-google-my-business .path3 {
+  &:before {
+    content: $logo-google-my-business-path3;  
+    margin-left: -1em;  
+    color: rgb(73, 89, 183);
+  }
+}
+.logo-google-my-business .path4 {
+  &:before {
+    content: $logo-google-my-business-path4;  
+    margin-left: -1em;  
+    color: rgb(73, 89, 183);
+  }
+}
+.logo-google-my-business .path5 {
+  &:before {
+    content: $logo-google-my-business-path5;  
+    margin-left: -1em;  
+    color: rgb(72, 129, 236);
+  }
+}
+.logo-grindr {
+  &:before {
+    content: $logo-grindr;     
+    color: #fcb83b;
+  }
+}
+.logo-hornet .path1 {
+  &:before {
+    content: $logo-hornet-path1;  
+    color: rgb(223, 84, 55);
+  }
+}
+.logo-hornet .path2 {
+  &:before {
+    content: $logo-hornet-path2;  
+    margin-left: -1em;  
+    color: rgb(255, 255, 254);
+  }
+}
+.logo-hornet .path3 {
+  &:before {
+    content: $logo-hornet-path3;  
+    margin-left: -1em;  
+    color: rgb(255, 255, 254);
+  }
+}
+.logo-hornet .path4 {
+  &:before {
+    content: $logo-hornet-path4;  
+    margin-left: -1em;  
+    color: rgb(255, 255, 254);
+  }
+}
+.logo-hornet .path5 {
+  &:before {
+    content: $logo-hornet-path5;  
+    margin-left: -1em;  
+    color: rgb(255, 255, 254);
+  }
+}
+.logo-hornet .path6 {
+  &:before {
+    content: $logo-hornet-path6;  
+    margin-left: -1em;  
+    color: rgb(255, 255, 254);
+  }
+}
+.logo-hornet .path7 {
+  &:before {
+    content: $logo-hornet-path7;  
+    margin-left: -1em;  
+    color: rgb(255, 255, 254);
+  }
+}
+.logo-hornet .path8 {
+  &:before {
+    content: $logo-hornet-path8;  
+    margin-left: -1em;  
+    color: rgb(255, 255, 254);
+  }
+}
+.logo-mercado-libre .path1 {
+  &:before {
+    content: $logo-mercado-libre-path1;  
+    color: rgb(242, 206, 0);
+  }
+}
+.logo-mercado-libre .path2 {
+  &:before {
+    content: $logo-mercado-libre-path2;  
+    margin-left: -1em;  
+    color: rgb(242, 206, 0);
+  }
+}
+.logo-mercado-libre .path3 {
+  &:before {
+    content: $logo-mercado-libre-path3;  
+    margin-left: -1em;  
+    color: rgb(242, 206, 0);
+  }
+}
+.logo-mercado-libre .path4 {
+  &:before {
+    content: $logo-mercado-libre-path4;  
+    margin-left: -1em;  
+    color: rgb(242, 206, 0);
+  }
+}
+.logo-mercado-libre .path5 {
+  &:before {
+    content: $logo-mercado-libre-path5;  
+    margin-left: -1em;  
+    color: rgb(254, 254, 254);
+  }
+}
+.logo-mercado-libre .path6 {
+  &:before {
+    content: $logo-mercado-libre-path6;  
+    margin-left: -1em;  
+    color: rgb(254, 254, 254);
+  }
+}
+.logo-mercado-libre .path7 {
+  &:before {
+    content: $logo-mercado-libre-path7;  
+    margin-left: -1em;  
+    color: rgb(49, 54, 115);
+  }
+}
+.logo-onlyfans .path1 {
+  &:before {
+    content: $logo-onlyfans-path1;  
+    color: rgb(0, 0, 0);
+  }
+}
+.logo-onlyfans .path2 {
+  &:before {
+    content: $logo-onlyfans-path2;  
+    margin-left: -1em;  
+    color: rgb(0, 174, 239);
+  }
+}
+.logo-scruff .path1 {
+  &:before {
+    content: $logo-scruff-path1;  
+    color: rgb(109, 109, 109);
+  }
+}
+.logo-scruff .path2 {
+  &:before {
+    content: $logo-scruff-path2;  
+    margin-left: -1em;  
+    color: rgb(109, 109, 109);
+  }
+}
+.logo-scruff .path3 {
+  &:before {
+    content: $logo-scruff-path3;  
+    margin-left: -1em;  
+    color: rgb(146, 146, 146);
+  }
+}
+.logo-scruff .path4 {
+  &:before {
+    content: $logo-scruff-path4;  
+    margin-left: -1em;  
+    color: rgb(146, 146, 146);
+  }
+}
+.logo-scruff .path5 {
+  &:before {
+    content: $logo-scruff-path5;  
+    margin-left: -1em;  
+    color: rgb(146, 146, 146);
+  }
+}
+.logo-scruff .path6 {
+  &:before {
+    content: $logo-scruff-path6;  
+    margin-left: -1em;  
+    color: rgb(146, 146, 146);
+  }
+}
+.logo-scruff .path7 {
+  &:before {
+    content: $logo-scruff-path7;  
+    margin-left: -1em;  
+    color: rgb(212, 212, 212);
+  }
+}
+.logo-scruff .path8 {
+  &:before {
+    content: $logo-scruff-path8;  
+    margin-left: -1em;  
+    color: rgb(212, 212, 212);
+  }
+}
+.logo-scruff .path9 {
+  &:before {
+    content: $logo-scruff-path9;  
+    margin-left: -1em;  
+    color: rgb(212, 212, 212);
+  }
+}
+.logo-scruff .path10 {
+  &:before {
+    content: $logo-scruff-path10;  
+    margin-left: -1em;  
+    color: rgb(212, 212, 212);
+  }
+}
+.logo-scruff .path11 {
+  &:before {
+    content: $logo-scruff-path11;  
+    margin-left: -1em;  
+    color: rgb(0, 0, 0);
+  }
+}
+.logo-scruff .path12 {
+  &:before {
+    content: $logo-scruff-path12;  
+    margin-left: -1em;  
+    color: rgb(76, 76, 76);
+  }
+}
+.logo-tripadvisor {
+  &:before {
+    content: $logo-tripadvisor;     
+    color: #08808a;
+  }
+}
+.logo-send {
+  &:before {
+    content: $logo-send;     
+    color: #e6e7e8;
+  }
+}
+.logo-w3spaces {
+  &:before {
+    content: $logo-w3spaces;     
+    color: #04a96c;
+  }
+}
+.logo-hi5 .path1 {
+  &:before {
+    content: $logo-hi5-path1;  
+    color: rgb(165, 170, 170);
+  }
+}
+.logo-hi5 .path2 {
+  &:before {
+    content: $logo-hi5-path2;  
+    margin-left: -1em;  
+    color: rgb(165, 170, 170);
+  }
+}
+.logo-hi5 .path3 {
+  &:before {
+    content: $logo-hi5-path3;  
+    margin-left: -1em;  
+    color: rgb(165, 170, 170);
+  }
+}
+.logo-hi5 .path4 {
+  &:before {
+    content: $logo-hi5-path4;  
+    margin-left: -1em;  
+    color: rgb(254, 254, 254);
+  }
+}
+.logo-hi5 .path5 {
+  &:before {
+    content: $logo-hi5-path5;  
+    margin-left: -1em;  
+    color: rgb(254, 254, 254);
+  }
+}
+.logo-hi5 .path6 {
+  &:before {
+    content: $logo-hi5-path6;  
+    margin-left: -1em;  
+    color: rgb(254, 254, 254);
+  }
+}
+.logo-hi5 .path7 {
+  &:before {
+    content: $logo-hi5-path7;  
+    margin-left: -1em;  
+    color: rgb(51, 62, 64);
+  }
+}
+.logo-hi5 .path8 {
+  &:before {
+    content: $logo-hi5-path8;  
+    margin-left: -1em;  
+    color: rgb(254, 148, 20);
+  }
+}
+.logo-hi5 .path9 {
+  &:before {
+    content: $logo-hi5-path9;  
+    margin-left: -1em;  
+    color: rgb(132, 139, 140);
+  }
+}
+.logo-xiib {
+  &:before {
+    content: $logo-xiib; 
+  }
+}
+.logo-e {
+  &:before {
+    content: $logo-e;     
+    color: #ec268f;
+  }
+}
+.logo-donaciones {
+  &:before {
+    content: $logo-donaciones; 
+  }
+}
+.logo-github-logo {
+  &:before {
+    content: $logo-github-logo; 
+  }
+}
+.logo-www {
+  &:before {
+    content: $logo-www;     
+    color: #aa1018;
+  }
+}
+.logo-carnet {
+  &:before {
+    content: $logo-carnet;     
+    color: #d81406;
+  }
+}
+.logo-sodexo .path1 {
+  &:before {
+    content: $logo-sodexo-path1;  
+    color: rgb(42, 54, 149);
+  }
+}
+.logo-sodexo .path2 {
+  &:before {
+    content: $logo-sodexo-path2;  
+    margin-left: -1em;  
+    color: rgb(236, 28, 36);
+  }
+}
+.logo-apple-pay {
+  &:before {
+    content: $logo-apple-pay; 
+  }
+}
+.logo-si-vale .path1 {
+  &:before {
+    content: $logo-si-vale-path1;  
+    color: rgb(244, 143, 0);
+  }
+}
+.logo-si-vale .path2 {
+  &:before {
+    content: $logo-si-vale-path2;  
+    margin-left: -1em;  
+    color: rgb(77, 92, 89);
+  }
+}
+.logo-si-vale .path3 {
+  &:before {
+    content: $logo-si-vale-path3;  
+    margin-left: -1em;  
+    color: rgb(244, 143, 0);
+  }
+}
+.logo-edenred {
+  &:before {
+    content: $logo-edenred;     
+    color: #eb001b;
+  }
+}
+.logo-toka {
+  &:before {
+    content: $logo-toka;     
+    color: #22297e;
+  }
+}
+.logo-samsung-pay {
+  &:before {
+    content: $logo-samsung-pay;     
+    color: #024ca1;
+  }
+}
+.logo-oxxo .path1 {
+  &:before {
+    content: $logo-oxxo-path1;  
+    color: rgb(240, 169, 41);
+  }
+}
+.logo-oxxo .path2 {
+  &:before {
+    content: $logo-oxxo-path2;  
+    margin-left: -1em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.logo-oxxo .path3 {
+  &:before {
+    content: $logo-oxxo-path3;  
+    margin-left: -1em;  
+    color: rgb(226, 28, 42);
+  }
+}
+.logo-oxxo .path4 {
+  &:before {
+    content: $logo-oxxo-path4;  
+    margin-left: -1em;  
+    color: rgb(226, 28, 42);
+  }
+}
+.logo-oxxo .path5 {
+  &:before {
+    content: $logo-oxxo-path5;  
+    margin-left: -1em;  
+    color: rgb(226, 28, 42);
+  }
+}
+.logo-mercado-pago-letras .path1 {
+  &:before {
+    content: $logo-mercado-pago-letras-path1;  
+    color: rgb(37, 62, 139);
+  }
+}
+.logo-mercado-pago-letras .path2 {
+  &:before {
+    content: $logo-mercado-pago-letras-path2;  
+    margin-left: -1em;  
+    color: rgb(37, 62, 139);
+  }
+}
+.logo-mercado-pago-letras .path3 {
+  &:before {
+    content: $logo-mercado-pago-letras-path3;  
+    margin-left: -1em;  
+    color: rgb(37, 62, 139);
+  }
+}
+.logo-mercado-pago-letras .path4 {
+  &:before {
+    content: $logo-mercado-pago-letras-path4;  
+    margin-left: -1em;  
+    color: rgb(37, 62, 139);
+  }
+}
+.logo-mercado-pago-letras .path5 {
+  &:before {
+    content: $logo-mercado-pago-letras-path5;  
+    margin-left: -1em;  
+    color: rgb(37, 62, 139);
+  }
+}
+.logo-mercado-pago-letras .path6 {
+  &:before {
+    content: $logo-mercado-pago-letras-path6;  
+    margin-left: -1em;  
+    color: rgb(37, 62, 139);
+  }
+}
+.logo-mercado-pago-letras .path7 {
+  &:before {
+    content: $logo-mercado-pago-letras-path7;  
+    margin-left: -1em;  
+    color: rgb(37, 62, 139);
+  }
+}
+.logo-mercado-pago-letras .path8 {
+  &:before {
+    content: $logo-mercado-pago-letras-path8;  
+    margin-left: -1em;  
+    color: rgb(0, 174, 239);
+  }
+}
+.logo-mercado-pago-letras .path9 {
+  &:before {
+    content: $logo-mercado-pago-letras-path9;  
+    margin-left: -1em;  
+    color: rgb(0, 174, 239);
+  }
+}
+.logo-mercado-pago-letras .path10 {
+  &:before {
+    content: $logo-mercado-pago-letras-path10;  
+    margin-left: -1em;  
+    color: rgb(0, 174, 239);
+  }
+}
+.logo-mercado-pago-letras .path11 {
+  &:before {
+    content: $logo-mercado-pago-letras-path11;  
+    margin-left: -1em;  
+    color: rgb(0, 174, 239);
+  }
+}
+.logo-mercado-pago .path1 {
+  &:before {
+    content: $logo-mercado-pago-path1;  
+    color: rgb(37, 62, 139);
+  }
+}
+.logo-mercado-pago .path2 {
+  &:before {
+    content: $logo-mercado-pago-path2;  
+    margin-left: -1em;  
+    color: rgb(0, 174, 239);
+  }
+}
+.logo-mercado-pago .path3 {
+  &:before {
+    content: $logo-mercado-pago-path3;  
+    margin-left: -1em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.logo-mercado-pago .path4 {
+  &:before {
+    content: $logo-mercado-pago-path4;  
+    margin-left: -1em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.logo-mercado-pago .path5 {
+  &:before {
+    content: $logo-mercado-pago-path5;  
+    margin-left: -1em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.logo-mercado-pago .path6 {
+  &:before {
+    content: $logo-mercado-pago-path6;  
+    margin-left: -1em;  
+    color: rgb(37, 62, 139);
+  }
+}
+.logo-mercado-pago .path7 {
+  &:before {
+    content: $logo-mercado-pago-path7;  
+    margin-left: -1em;  
+    color: rgb(37, 62, 139);
+  }
+}
+.logo-mercado-pago .path8 {
+  &:before {
+    content: $logo-mercado-pago-path8;  
+    margin-left: -1em;  
+    color: rgb(37, 62, 139);
+  }
+}
+.logo-mercado-pago .path9 {
+  &:before {
+    content: $logo-mercado-pago-path9;  
+    margin-left: -1em;  
+    color: rgb(37, 62, 139);
+  }
+}
+.logo-mercado-pago .path10 {
+  &:before {
+    content: $logo-mercado-pago-path10;  
+    margin-left: -1em;  
+    color: rgb(37, 62, 139);
+  }
+}
+.logo-mercado-pago .path11 {
+  &:before {
+    content: $logo-mercado-pago-path11;  
+    margin-left: -1em;  
+    color: rgb(37, 62, 139);
+  }
+}
+.logo-mercado-pago .path12 {
+  &:before {
+    content: $logo-mercado-pago-path12;  
+    margin-left: -1em;  
+    color: rgb(37, 62, 139);
+  }
+}
+.logo-mercado-pago .path13 {
+  &:before {
+    content: $logo-mercado-pago-path13;  
+    margin-left: -1em;  
+    color: rgb(37, 62, 139);
+  }
+}
+.logo-mercado-pago .path14 {
+  &:before {
+    content: $logo-mercado-pago-path14;  
+    margin-left: -1em;  
+    color: rgb(0, 174, 239);
+  }
+}
+.logo-mercado-pago .path15 {
+  &:before {
+    content: $logo-mercado-pago-path15;  
+    margin-left: -1em;  
+    color: rgb(0, 174, 239);
+  }
+}
+.logo-mercado-pago .path16 {
+  &:before {
+    content: $logo-mercado-pago-path16;  
+    margin-left: -1em;  
+    color: rgb(0, 174, 239);
+  }
+}
+.logo-mercado-pago .path17 {
+  &:before {
+    content: $logo-mercado-pago-path17;  
+    margin-left: -1em;  
+    color: rgb(0, 174, 239);
+  }
+}
+.logo-mercado-pago-logo .path1 {
+  &:before {
+    content: $logo-mercado-pago-logo-path1;  
+    color: rgb(37, 62, 139);
+  }
+}
+.logo-mercado-pago-logo .path2 {
+  &:before {
+    content: $logo-mercado-pago-logo-path2;  
+    margin-left: -1em;  
+    color: rgb(0, 174, 239);
+  }
+}
+.logo-mercado-pago-logo .path3 {
+  &:before {
+    content: $logo-mercado-pago-logo-path3;  
+    margin-left: -1em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.logo-mercado-pago-logo .path4 {
+  &:before {
+    content: $logo-mercado-pago-logo-path4;  
+    margin-left: -1em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.logo-mercado-pago-logo .path5 {
+  &:before {
+    content: $logo-mercado-pago-logo-path5;  
+    margin-left: -1em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.logo-mercado-pago-logo .path6 {
+  &:before {
+    content: $logo-mercado-pago-logo-path6;  
+    margin-left: -1em;  
+    color: rgb(37, 62, 139);
+  }
+}
+.logo-clip .path1 {
+  &:before {
+    content: $logo-clip-path1;  
+    color: rgb(252, 76, 2);
+  }
+}
+.logo-clip .path2 {
+  &:before {
+    content: $logo-clip-path2;  
+    margin-left: -1em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.logo-clip .path3 {
+  &:before {
+    content: $logo-clip-path3;  
+    margin-left: -1em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.logo-clip .path4 {
+  &:before {
+    content: $logo-clip-path4;  
+    margin-left: -1em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.logo-clip .path5 {
+  &:before {
+    content: $logo-clip-path5;  
+    margin-left: -1em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.logo-clip .path6 {
+  &:before {
+    content: $logo-clip-path6;  
+    margin-left: -1em;  
+    color: rgb(255, 255, 255);
+  }
+}
+.logo-mastercard .path1 {
+  &:before {
+    content: $logo-mastercard-path1;  
+    color: rgb(35, 31, 32);
+  }
+}
+.logo-mastercard .path2 {
+  &:before {
+    content: $logo-mastercard-path2;  
+    margin-left: -1em;  
+    color: rgb(255, 95, 0);
+  }
+}
+.logo-mastercard .path3 {
+  &:before {
+    content: $logo-mastercard-path3;  
+    margin-left: -1em;  
+    color: rgb(235, 0, 27);
+  }
+}
+.logo-mastercard .path4 {
+  &:before {
+    content: $logo-mastercard-path4;  
+    margin-left: -1em;  
+    color: rgb(247, 158, 27);
+  }
+}
+.logo-visa {
+  &:before {
+    content: $logo-visa;     
+    color: #003871;
+  }
+}
+.logo-american-express .path1 {
+  &:before {
+    content: $logo-american-express-path1;  
+    color: rgb(255, 255, 255);
+  }
+}
+.logo-american-express .path2 {
+  &:before {
+    content: $logo-american-express-path2;  
+    margin-left: -1em;  
+    color: rgb(0, 119, 166);
+  }
+}
+.logo-banco-azteca .path1 {
+  &:before {
+    content: $logo-banco-azteca-path1;  
+    color: rgb(185, 60, 62);
+  }
+}
+.logo-banco-azteca .path2 {
+  &:before {
+    content: $logo-banco-azteca-path2;  
+    margin-left: -1em;  
+    color: rgb(47, 108, 75);
+  }
+}
+.logo-banco-azteca .path3 {
+  &:before {
+    content: $logo-banco-azteca-path3;  
+    margin-left: -1em;  
+    color: rgb(111, 114, 122);
+  }
+}
+.logo-banco-azteca .path4 {
+  &:before {
+    content: $logo-banco-azteca-path4;  
+    margin-left: -1em;  
+    color: rgb(111, 114, 122);
+  }
+}
+.logo-banco-azteca .path5 {
+  &:before {
+    content: $logo-banco-azteca-path5;  
+    margin-left: -1em;  
+    color: rgb(111, 114, 122);
+  }
+}
+.logo-banco-azteca .path6 {
+  &:before {
+    content: $logo-banco-azteca-path6;  
+    margin-left: -1em;  
+    color: rgb(111, 114, 122);
+  }
+}
+.logo-banco-azteca .path7 {
+  &:before {
+    content: $logo-banco-azteca-path7;  
+    margin-left: -1em;  
+    color: rgb(111, 114, 122);
+  }
+}
+.logo-banco-azteca .path8 {
+  &:before {
+    content: $logo-banco-azteca-path8;  
+    margin-left: -1em;  
+    color: rgb(111, 114, 122);
+  }
+}
+.logo-banco-azteca .path9 {
+  &:before {
+    content: $logo-banco-azteca-path9;  
+    margin-left: -1em;  
+    color: rgb(111, 114, 122);
+  }
+}
+.logo-banco-azteca .path10 {
+  &:before {
+    content: $logo-banco-azteca-path10;  
+    margin-left: -1em;  
+    color: rgb(111, 114, 122);
+  }
+}
+.logo-banco-azteca .path11 {
+  &:before {
+    content: $logo-banco-azteca-path11;  
+    margin-left: -1em;  
+    color: rgb(111, 114, 122);
+  }
+}
+.logo-banco-azteca .path12 {
+  &:before {
+    content: $logo-banco-azteca-path12;  
+    margin-left: -1em;  
+    color: rgb(111, 114, 122);
+  }
+}
+.logo-banco-azteca .path13 {
+  &:before {
+    content: $logo-banco-azteca-path13;  
+    margin-left: -1em;  
+    color: rgb(111, 114, 122);
+  }
+}
+.logo-corazon {
+  &:before {
+    content: $logo-corazon; 
+  }
+}
+.logo-hhm {
+  &:before {
+    content: $logo-hhm;     
+    color: #b00a8c;
+  }
+}
+.logo-pokebola {
+  &:before {
+    content: $logo-pokebola; 
+  }
+}
+.logo-faq {
+  &:before {
+    content: $logo-faq; 
+  }
+}
+.logo-menu-puntos {
+  &:before {
+    content: $logo-menu-puntos; 
+  }
+}
+.logo-menu {
+  &:before {
+    content: $logo-menu; 
+  }
+}
+.logo-1password {
+  &:before {
+    content: $logo-1password;     
+    color: #0094f5;
+  }
+}
+.logo-500px {
+  &:before {
+    content: $logo-500px;     
+    color: #0099e5;
+  }
+}
+.logo-abbrobotstudio {
+  &:before {
+    content: $logo-abbrobotstudio;     
+    color: #ff9e0f;
+  }
+}
+.logo-about-dot-me {
+  &:before {
+    content: $logo-about-dot-me;     
+    color: #00a98f;
+  }
+}
+.logo-abstract {
+  &:before {
+    content: $logo-abstract; 
+  }
+}
+.logo-academia {
+  &:before {
+    content: $logo-academia; 
+  }
+}
+.logo-accusoft {
+  &:before {
+    content: $logo-accusoft;     
+    color: #ff7e4a;
+  }
+}
+.logo-acm {
+  &:before {
+    content: $logo-acm;     
+    color: #0085ca;
+  }
+}
+.logo-addthis {
+  &:before {
+    content: $logo-addthis;     
+    color: #ff6550;
+  }
+}
+.logo-adguard {
+  &:before {
+    content: $logo-adguard;     
+    color: #66b574;
+  }
+}
+.logo-adobe {
+  &:before {
+    content: $logo-adobe;     
+    color: #f00;
+  }
+}
+.logo-adobeacrobatreader {
+  &:before {
+    content: $logo-adobeacrobatreader;     
+    color: #ee3f24;
+  }
+}
+.logo-adobeaftereffects {
+  &:before {
+    content: $logo-adobeaftereffects;     
+    color: #d291ff;
+  }
+}
+.logo-adobeaudition {
+  &:before {
+    content: $logo-adobeaudition;     
+    color: #00e4bb;
+  }
+}
+.logo-adobecreativecloud {
+  &:before {
+    content: $logo-adobecreativecloud;     
+    color: #d41818;
+  }
+}
+.logo-adobedreamweaver {
+  &:before {
+    content: $logo-adobedreamweaver;     
+    color: #35fa00;
+  }
+}
+.logo-adobeillustrator {
+  &:before {
+    content: $logo-adobeillustrator;     
+    color: #ff7c00;
+  }
+}
+.logo-adobeindesign {
+  &:before {
+    content: $logo-adobeindesign;     
+    color: #fd3f93;
+  }
+}
+.logo-adobelightroomcc {
+  &:before {
+    content: $logo-adobelightroomcc;     
+    color: #3df0f0;
+  }
+}
+.logo-adobelightroomclassic {
+  &:before {
+    content: $logo-adobelightroomclassic;     
+    color: #add5ec;
+  }
+}
+.logo-adobephotoshop {
+  &:before {
+    content: $logo-adobephotoshop;     
+    color: #00c8ff;
+  }
+}
+.logo-adobepremiere {
+  &:before {
+    content: $logo-adobepremiere;     
+    color: #ea77ff;
+  }
+}
+.logo-adobetypekit {
+  &:before {
+    content: $logo-adobetypekit;     
+    color: #87ec00;
+  }
+}
+.logo-adobexd {
+  &:before {
+    content: $logo-adobexd;     
+    color: #ff2bc2;
+  }
+}
+.logo-airbnb {
+  &:before {
+    content: $logo-airbnb;     
+    color: #ff5a5f;
+  }
+}
+.logo-airplayaudio {
+  &:before {
+    content: $logo-airplayaudio; 
+  }
+}
+.logo-airplayvideo {
+  &:before {
+    content: $logo-airplayvideo; 
+  }
+}
+.logo-algolia {
+  &:before {
+    content: $logo-algolia;     
+    color: #5468ff;
+  }
+}
+.logo-alliedmodders {
+  &:before {
+    content: $logo-alliedmodders;     
+    color: #1578d3;
+  }
+}
+.logo-amazon {
+  &:before {
+    content: $logo-amazon;     
+    color: #f90;
+  }
+}
+.logo-amazonalexa {
+  &:before {
+    content: $logo-amazonalexa;     
+    color: #00caff;
+  }
+}
+.logo-amazonaws {
+  &:before {
+    content: $logo-amazonaws; 
+  }
+}
+.logo-amd {
+  &:before {
+    content: $logo-amd;     
+    color: #ed1c24;
+  }
+}
+.logo-americanexpress {
+  &:before {
+    content: $logo-americanexpress;     
+    color: #2e77bc;
+  }
+}
+.logo-anaconda {
+  &:before {
+    content: $logo-anaconda;     
+    color: #42b029;
+  }
+}
+.logo-analogue {
+  &:before {
+    content: $logo-analogue; 
+  }
+}
+.logo-anchor {
+  &:before {
+    content: $logo-anchor;     
+    color: #8940fa;
+  }
+}
+.logo-android {
+  &:before {
+    content: $logo-android;     
+    color: #3ddc84;
+  }
+}
+.logo-angellist {
+  &:before {
+    content: $logo-angellist; 
+  }
+}
+.logo-angular {
+  &:before {
+    content: $logo-angular;     
+    color: #dd0031;
+  }
+}
+.logo-angularuniversal {
+  &:before {
+    content: $logo-angularuniversal;     
+    color: #00acc1;
+  }
+}
+.logo-ansible {
+  &:before {
+    content: $logo-ansible;     
+    color: #e00;
+  }
+}
+.logo-apache {
+  &:before {
+    content: $logo-apache;     
+    color: #d22128;
+  }
+}
+.logo-apacheairflow {
+  &:before {
+    content: $logo-apacheairflow;     
+    color: #007a88;
+  }
+}
+.logo-apachecordova {
+  &:before {
+    content: $logo-apachecordova;     
+    color: #e8e8e8;
+  }
+}
+.logo-apacheflink {
+  &:before {
+    content: $logo-apacheflink;     
+    color: #e6526f;
+  }
+}
+.logo-apachekafka {
+  &:before {
+    content: $logo-apachekafka; 
+  }
+}
+.logo-apachenetbeanside {
+  &:before {
+    content: $logo-apachenetbeanside;     
+    color: #1b6ac6;
+  }
+}
+.logo-apacheopenoffice {
+  &:before {
+    content: $logo-apacheopenoffice;     
+    color: #0e85cd;
+  }
+}
+.logo-apacherocketmq {
+  &:before {
+    content: $logo-apacherocketmq;     
+    color: #d77310;
+  }
+}
+.logo-apachespark {
+  &:before {
+    content: $logo-apachespark;     
+    color: #e25a1c;
+  }
+}
+.logo-apple {
+  &:before {
+    content: $logo-apple;     
+    color: #999;
+  }
+}
+.logo-applemusic {
+  &:before {
+    content: $logo-applemusic; 
+  }
+}
+.logo-applepay {
+  &:before {
+    content: $logo-applepay; 
+  }
+}
+.logo-applepodcasts {
+  &:before {
+    content: $logo-applepodcasts;     
+    color: #93c;
+  }
+}
+.logo-appveyor {
+  &:before {
+    content: $logo-appveyor;     
+    color: #00b3e0;
+  }
+}
+.logo-aral {
+  &:before {
+    content: $logo-aral;     
+    color: #0063cb;
+  }
+}
+.logo-archiveofourown {
+  &:before {
+    content: $logo-archiveofourown;     
+    color: #900;
+  }
+}
+.logo-archlinux {
+  &:before {
+    content: $logo-archlinux;     
+    color: #1793d1;
+  }
+}
+.logo-arduino {
+  &:before {
+    content: $logo-arduino;     
+    color: #00979d;
+  }
+}
+.logo-artstation {
+  &:before {
+    content: $logo-artstation;     
+    color: #13aff0;
+  }
+}
+.logo-arxiv {
+  &:before {
+    content: $logo-arxiv;     
+    color: #b31b1b;
+  }
+}
+.logo-asana {
+  &:before {
+    content: $logo-asana; 
+  }
+}
+.logo-asciidoctor {
+  &:before {
+    content: $logo-asciidoctor;     
+    color: #e40046;
+  }
+}
+.logo-at-and-t {
+  &:before {
+    content: $logo-at-and-t;     
+    color: #00a8e0;
+  }
+}
+.logo-atlassian {
+  &:before {
+    content: $logo-atlassian;     
+    color: #0052cc;
+  }
+}
+.logo-atom {
+  &:before {
+    content: $logo-atom;     
+    color: #66595c;
+  }
+}
+.logo-audi {
+  &:before {
+    content: $logo-audi;     
+    color: #bb0a30;
+  }
+}
+.logo-audible {
+  &:before {
+    content: $logo-audible;     
+    color: #f8991c;
+  }
+}
+.logo-aurelia {
+  &:before {
+    content: $logo-aurelia;     
+    color: #ed2b88;
+  }
+}
+.logo-auth0 {
+  &:before {
+    content: $logo-auth0;     
+    color: #eb5424;
+  }
+}
+.logo-automatic {
+  &:before {
+    content: $logo-automatic;     
+    color: #7d8084;
+  }
+}
+.logo-autotask {
+  &:before {
+    content: $logo-autotask;     
+    color: #e51937;
+  }
+}
+.logo-aventrix {
+  &:before {
+    content: $logo-aventrix;     
+    color: #09d;
+  }
+}
+.logo-awesomewm {
+  &:before {
+    content: $logo-awesomewm;     
+    color: #535d6c;
+  }
+}
+.logo-azureartifacts {
+  &:before {
+    content: $logo-azureartifacts;     
+    color: #cb2e6d;
+  }
+}
+.logo-azuredevops {
+  &:before {
+    content: $logo-azuredevops;     
+    color: #0078d7;
+  }
+}
+.logo-azurepipelines {
+  &:before {
+    content: $logo-azurepipelines;     
+    color: #2560e0;
+  }
+}
+.logo-babel {
+  &:before {
+    content: $logo-babel;     
+    color: #f9dc3e;
+  }
+}
+.logo-baidu {
+  &:before {
+    content: $logo-baidu;     
+    color: #2319dc;
+  }
+}
+.logo-bamboo {
+  &:before {
+    content: $logo-bamboo;     
+    color: #0052cc;
+  }
+}
+.logo-bancontact {
+  &:before {
+    content: $logo-bancontact;     
+    color: #005498;
+  }
+}
+.logo-bandcamp {
+  &:before {
+    content: $logo-bandcamp;     
+    color: #408294;
+  }
+}
+.logo-bandlab {
+  &:before {
+    content: $logo-bandlab;     
+    color: #dc3710;
+  }
+}
+.logo-basecamp {
+  &:before {
+    content: $logo-basecamp;     
+    color: #5ecc62;
+  }
+}
+.logo-bathasu {
+  &:before {
+    content: $logo-bathasu;     
+    color: #00a3e0;
+  }
+}
+.logo-beats {
+  &:before {
+    content: $logo-beats;     
+    color: #005571;
+  }
+}
+.logo-beatsbydre {
+  &:before {
+    content: $logo-beatsbydre;     
+    color: #e01f3d;
+  }
+}
+.logo-behance {
+  &:before {
+    content: $logo-behance;     
+    color: #1769ff;
+  }
+}
+.logo-bigcartel {
+  &:before {
+    content: $logo-bigcartel; 
+  }
+}
+.logo-bing {
+  &:before {
+    content: $logo-bing;     
+    color: #008373;
+  }
+}
+.logo-bit {
+  &:before {
+    content: $logo-bit;     
+    color: #73398d;
+  }
+}
+.logo-bitbucket {
+  &:before {
+    content: $logo-bitbucket;     
+    color: #0052cc;
+  }
+}
+.logo-bitcoin {
+  &:before {
+    content: $logo-bitcoin;     
+    color: #f7931a;
+  }
+}
+.logo-bitdefender {
+  &:before {
+    content: $logo-bitdefender;     
+    color: #ed1c24;
+  }
+}
+.logo-bitly {
+  &:before {
+    content: $logo-bitly;     
+    color: #ee6123;
+  }
+}
+.logo-bitrise {
+  &:before {
+    content: $logo-bitrise;     
+    color: #683d87;
+  }
+}
+.logo-blackberry {
+  &:before {
+    content: $logo-blackberry; 
+  }
+}
+.logo-blender {
+  &:before {
+    content: $logo-blender;     
+    color: #f5792a;
+  }
+}
+.logo-blogger {
+  &:before {
+    content: $logo-blogger;     
+    color: #ff5722;
+  }
+}
+.logo-bmcsoftware {
+  &:before {
+    content: $logo-bmcsoftware;     
+    color: #fe5000;
+  }
+}
+.logo-boeing {
+  &:before {
+    content: $logo-boeing;     
+    color: #1d439c;
+  }
+}
+.logo-boost {
+  &:before {
+    content: $logo-boost;     
+    color: #f69220;
+  }
+}
+.logo-bootstrap {
+  &:before {
+    content: $logo-bootstrap;     
+    color: #563d7c;
+  }
+}
+.logo-bower {
+  &:before {
+    content: $logo-bower;     
+    color: #ef5734;
+  }
+}
+.logo-box {
+  &:before {
+    content: $logo-box;     
+    color: #0061d5;
+  }
+}
+.logo-brand-dot-ai {
+  &:before {
+    content: $logo-brand-dot-ai;     
+    color: #0aa0ff;
+  }
+}
+.logo-brandfolder {
+  &:before {
+    content: $logo-brandfolder;     
+    color: #40d1f5;
+  }
+}
+.logo-brave {
+  &:before {
+    content: $logo-brave;     
+    color: #fb542b;
+  }
+}
+.logo-breaker {
+  &:before {
+    content: $logo-breaker;     
+    color: #003dad;
+  }
+}
+.logo-broadcom {
+  &:before {
+    content: $logo-broadcom;     
+    color: #cc092f;
+  }
+}
+.logo-buddy {
+  &:before {
+    content: $logo-buddy;     
+    color: #1a86fd;
+  }
+}
+.logo-buffer {
+  &:before {
+    content: $logo-buffer;     
+    color: #168eea;
+  }
+}
+.logo-buymeacoffee {
+  &:before {
+    content: $logo-buymeacoffee;     
+    color: #ff813f;
+  }
+}
+.logo-buzzfeed {
+  &:before {
+    content: $logo-buzzfeed;     
+    color: #e32;
+  }
+}
+.logo-c {
+  &:before {
+    content: $logo-c;     
+    color: #a8b9cc;
+  }
+}
+.logo-cakephp {
+  &:before {
+    content: $logo-cakephp;     
+    color: #d33c43;
+  }
+}
+.logo-campaignmonitor {
+  &:before {
+    content: $logo-campaignmonitor;     
+    color: #509cf6;
+  }
+}
+.logo-canva {
+  &:before {
+    content: $logo-canva;     
+    color: #00c4cc;
+  }
+}
+.logo-cashapp {
+  &:before {
+    content: $logo-cashapp;     
+    color: #00c244;
+  }
+}
+.logo-cassandra {
+  &:before {
+    content: $logo-cassandra;     
+    color: #1287b1;
+  }
+}
+.logo-castorama {
+  &:before {
+    content: $logo-castorama;     
+    color: #0078d7;
+  }
+}
+.logo-castro {
+  &:before {
+    content: $logo-castro;     
+    color: #00b265;
+  }
+}
+.logo-centos {
+  &:before {
+    content: $logo-centos;     
+    color: #262577;
+  }
+}
+.logo-cevo {
+  &:before {
+    content: $logo-cevo;     
+    color: #1eabe2;
+  }
+}
+.logo-chase {
+  &:before {
+    content: $logo-chase;     
+    color: #117aca;
+  }
+}
+.logo-chef {
+  &:before {
+    content: $logo-chef;     
+    color: #f09820;
+  }
+}
+.logo-circle {
+  &:before {
+    content: $logo-circle;     
+    color: #8669ae;
+  }
+}
+.logo-circleci {
+  &:before {
+    content: $logo-circleci; 
+  }
+}
+.logo-cirrusci {
+  &:before {
+    content: $logo-cirrusci; 
+  }
+}
+.logo-cisco {
+  &:before {
+    content: $logo-cisco;     
+    color: #1ba0d7;
+  }
+}
+.logo-civicrm {
+  &:before {
+    content: $logo-civicrm;     
+    color: #81c459;
+  }
+}
+.logo-clockify {
+  &:before {
+    content: $logo-clockify;     
+    color: #03a9f4;
+  }
+}
+.logo-clojure {
+  &:before {
+    content: $logo-clojure;     
+    color: #5881d8;
+  }
+}
+.logo-cloudbees {
+  &:before {
+    content: $logo-cloudbees;     
+    color: #1997b5;
+  }
+}
+.logo-cloudflare {
+  &:before {
+    content: $logo-cloudflare;     
+    color: #f38020;
+  }
+}
+.logo-cmake {
+  &:before {
+    content: $logo-cmake;     
+    color: #064f8c;
+  }
+}
+.logo-co-op {
+  &:before {
+    content: $logo-co-op;     
+    color: #00b1e7;
+  }
+}
+.logo-codacy {
+  &:before {
+    content: $logo-codacy; 
+  }
+}
+.logo-codecademy {
+  &:before {
+    content: $logo-codecademy;     
+    color: #1f4056;
+  }
+}
+.logo-codechef {
+  &:before {
+    content: $logo-codechef;     
+    color: #5b4638;
+  }
+}
+.logo-codeclimate {
+  &:before {
+    content: $logo-codeclimate; 
+  }
+}
+.logo-codecov {
+  &:before {
+    content: $logo-codecov;     
+    color: #f01f7a;
+  }
+}
+.logo-codefactor {
+  &:before {
+    content: $logo-codefactor;     
+    color: #f44a6a;
+  }
+}
+.logo-codeforces {
+  &:before {
+    content: $logo-codeforces;     
+    color: #1f8acb;
+  }
+}
+.logo-codeigniter {
+  &:before {
+    content: $logo-codeigniter;     
+    color: #ee4623;
+  }
+}
+.logo-codepen {
+  &:before {
+    content: $logo-codepen; 
+  }
+}
+.logo-coderwall {
+  &:before {
+    content: $logo-coderwall;     
+    color: #3e8dcc;
+  }
+}
+.logo-codesandbox {
+  &:before {
+    content: $logo-codesandbox; 
+  }
+}
+.logo-codeship {
+  &:before {
+    content: $logo-codeship;     
+    color: #3c4858;
+  }
+}
+.logo-codewars {
+  &:before {
+    content: $logo-codewars;     
+    color: #ad2c27;
+  }
+}
+.logo-codio {
+  &:before {
+    content: $logo-codio;     
+    color: #4574e0;
+  }
+}
+.logo-coffeescript {
+  &:before {
+    content: $logo-coffeescript; 
+  }
+}
+.logo-coinbase {
+  &:before {
+    content: $logo-coinbase;     
+    color: #0667d0;
+  }
+}
+.logo-commonworkflowlanguage {
+  &:before {
+    content: $logo-commonworkflowlanguage;     
+    color: #b5314c;
+  }
+}
+.logo-composer {
+  &:before {
+    content: $logo-composer;     
+    color: #885630;
+  }
+}
+.logo-compropago {
+  &:before {
+    content: $logo-compropago;     
+    color: #00aaef;
+  }
+}
+.logo-conda-forge {
+  &:before {
+    content: $logo-conda-forge; 
+  }
+}
+.logo-conekta {
+  &:before {
+    content: $logo-conekta;     
+    color: #414959;
+  }
+}
+.logo-confluence {
+  &:before {
+    content: $logo-confluence; 
+  }
+}
+.logo-coronarenderer {
+  &:before {
+    content: $logo-coronarenderer;     
+    color: #e6502a;
+  }
+}
+.logo-coursera {
+  &:before {
+    content: $logo-coursera;     
+    color: #2a73cc;
+  }
+}
+.logo-coveralls {
+  &:before {
+    content: $logo-coveralls;     
+    color: #3f5767;
+  }
+}
+.logo-cpanel {
+  &:before {
+    content: $logo-cpanel;     
+    color: #ff6c2c;
+  }
+}
+.logo-cplusplus {
+  &:before {
+    content: $logo-cplusplus;     
+    color: #00599c;
+  }
+}
+.logo-creativecommons {
+  &:before {
+    content: $logo-creativecommons;     
+    color: #ef9421;
+  }
+}
+.logo-crehana {
+  &:before {
+    content: $logo-crehana;     
+    color: #4b22f4;
+  }
+}
+.logo-crunchbase {
+  &:before {
+    content: $logo-crunchbase;     
+    color: #0288d1;
+  }
+}
+.logo-crunchyroll {
+  &:before {
+    content: $logo-crunchyroll;     
+    color: #f47521;
+  }
+}
+.logo-cryengine {
+  &:before {
+    content: $logo-cryengine; 
+  }
+}
+.logo-csharp {
+  &:before {
+    content: $logo-csharp;     
+    color: #239120;
+  }
+}
+.logo-css3 {
+  &:before {
+    content: $logo-css3;     
+    color: #1572b6;
+  }
+}
+.logo-csswizardry {
+  &:before {
+    content: $logo-csswizardry;     
+    color: #f43059;
+  }
+}
+.logo-curl {
+  &:before {
+    content: $logo-curl; 
+  }
+}
+.logo-d3-dot-js {
+  &:before {
+    content: $logo-d3-dot-js;     
+    color: #f9a03c;
+  }
+}
+.logo-dailymotion {
+  &:before {
+    content: $logo-dailymotion;     
+    color: #0066dc;
+  }
+}
+.logo-dart {
+  &:before {
+    content: $logo-dart;     
+    color: #0175c2;
+  }
+}
+.logo-dashlane {
+  &:before {
+    content: $logo-dashlane;     
+    color: #007c97;
+  }
+}
+.logo-datacamp {
+  &:before {
+    content: $logo-datacamp;     
+    color: #3ac;
+  }
+}
+.logo-dazn {
+  &:before {
+    content: $logo-dazn;     
+    color: #f8f8f5;
+  }
+}
+.logo-dblp {
+  &:before {
+    content: $logo-dblp;     
+    color: #004f9f;
+  }
+}
+.logo-debian {
+  &:before {
+    content: $logo-debian;     
+    color: #a81d33;
+  }
+}
+.logo-deepin {
+  &:before {
+    content: $logo-deepin;     
+    color: #007cff;
+  }
+}
+.logo-deezer {
+  &:before {
+    content: $logo-deezer;     
+    color: #feaa2d;
+  }
+}
+.logo-delicious {
+  &:before {
+    content: $logo-delicious;     
+    color: #39f;
+  }
+}
+.logo-deliveroo {
+  &:before {
+    content: $logo-deliveroo;     
+    color: #00ccbc;
+  }
+}
+.logo-dell {
+  &:before {
+    content: $logo-dell;     
+    color: #007db8;
+  }
+}
+.logo-deno {
+  &:before {
+    content: $logo-deno; 
+  }
+}
+.logo-dependabot {
+  &:before {
+    content: $logo-dependabot;     
+    color: #025e8c;
+  }
+}
+.logo-designernews {
+  &:before {
+    content: $logo-designernews;     
+    color: #2d72d9;
+  }
+}
+.logo-dev-dot-to {
+  &:before {
+    content: $logo-dev-dot-to; 
+  }
+}
+.logo-deviantart {
+  &:before {
+    content: $logo-deviantart;     
+    color: #05cc47;
+  }
+}
+.logo-devrant {
+  &:before {
+    content: $logo-devrant;     
+    color: #f99a66;
+  }
+}
+.logo-diaspora {
+  &:before {
+    content: $logo-diaspora; 
+  }
+}
+.logo-digg {
+  &:before {
+    content: $logo-digg; 
+  }
+}
+.logo-digitalocean {
+  &:before {
+    content: $logo-digitalocean;     
+    color: #0080ff;
+  }
+}
+.logo-directus {
+  &:before {
+    content: $logo-directus; 
+  }
+}
+.logo-discord {
+  &:before {
+    content: $logo-discord;     
+    color: #7289da;
+  }
+}
+.logo-discourse {
+  &:before {
+    content: $logo-discourse; 
+  }
+}
+.logo-discover {
+  &:before {
+    content: $logo-discover;     
+    color: #ff6000;
+  }
+}
+.logo-disqus {
+  &:before {
+    content: $logo-disqus;     
+    color: #2e9fff;
+  }
+}
+.logo-disroot {
+  &:before {
+    content: $logo-disroot;     
+    color: #50162d;
+  }
+}
+.logo-django {
+  &:before {
+    content: $logo-django; 
+  }
+}
+.logo-dlna {
+  &:before {
+    content: $logo-dlna;     
+    color: #48a842;
+  }
+}
+.logo-docker {
+  &:before {
+    content: $logo-docker;     
+    color: #1488c6;
+  }
+}
+.logo-docusign {
+  &:before {
+    content: $logo-docusign;     
+    color: #fc2;
+  }
+}
+.logo-dolby {
+  &:before {
+    content: $logo-dolby; 
+  }
+}
+.logo-dot-net {
+  &:before {
+    content: $logo-dot-net;     
+    color: #5c2d91;
+  }
+}
+.logo-draugiem-dot-lv {
+  &:before {
+    content: $logo-draugiem-dot-lv;     
+    color: #f60;
+  }
+}
+.logo-dribbble {
+  &:before {
+    content: $logo-dribbble;     
+    color: #ea4c89;
+  }
+}
+.logo-drone {
+  &:before {
+    content: $logo-drone; 
+  }
+}
+.logo-dropbox {
+  &:before {
+    content: $logo-dropbox;     
+    color: #0061ff;
+  }
+}
+.logo-drupal {
+  &:before {
+    content: $logo-drupal;     
+    color: #0678be;
+  }
+}
+.logo-dtube {
+  &:before {
+    content: $logo-dtube;     
+    color: #f00;
+  }
+}
+.logo-duckduckgo {
+  &:before {
+    content: $logo-duckduckgo;     
+    color: #de5833;
+  }
+}
+.logo-dunked {
+  &:before {
+    content: $logo-dunked;     
+    color: #2da9d7;
+  }
+}
+.logo-duolingo {
+  &:before {
+    content: $logo-duolingo;     
+    color: #58cc02;
+  }
+}
+.logo-dynatrace {
+  &:before {
+    content: $logo-dynatrace;     
+    color: #1496ff;
+  }
+}
+.logo-ebay {
+  &:before {
+    content: $logo-ebay;     
+    color: #e53238;
+  }
+}
+.logo-eclipseide {
+  &:before {
+    content: $logo-eclipseide;     
+    color: #2c2255;
+  }
+}
+.logo-elastic {
+  &:before {
+    content: $logo-elastic;     
+    color: #005571;
+  }
+}
+.logo-elasticcloud {
+  &:before {
+    content: $logo-elasticcloud;     
+    color: #005571;
+  }
+}
+.logo-elasticsearch {
+  &:before {
+    content: $logo-elasticsearch;     
+    color: #005571;
+  }
+}
+.logo-elasticstack {
+  &:before {
+    content: $logo-elasticstack;     
+    color: #005571;
+  }
+}
+.logo-electron {
+  &:before {
+    content: $logo-electron;     
+    color: #47848f;
+  }
+}
+.logo-elementary {
+  &:before {
+    content: $logo-elementary;     
+    color: #64baff;
+  }
+}
+.logo-eleventy {
+  &:before {
+    content: $logo-eleventy; 
+  }
+}
+.logo-ello {
+  &:before {
+    content: $logo-ello; 
+  }
+}
+.logo-elsevier {
+  &:before {
+    content: $logo-elsevier;     
+    color: #ff6c00;
+  }
+}
+.logo-ember-dot-js {
+  &:before {
+    content: $logo-ember-dot-js;     
+    color: #e04e39;
+  }
+}
+.logo-emlakjet {
+  &:before {
+    content: $logo-emlakjet;     
+    color: #0ae524;
+  }
+}
+.logo-empirekred {
+  &:before {
+    content: $logo-empirekred;     
+    color: #72be50;
+  }
+}
+.logo-envato {
+  &:before {
+    content: $logo-envato;     
+    color: #81b441;
+  }
+}
+.logo-epel {
+  &:before {
+    content: $logo-epel;     
+    color: #fc0000;
+  }
+}
+.logo-epicgames {
+  &:before {
+    content: $logo-epicgames; 
+  }
+}
+.logo-epson {
+  &:before {
+    content: $logo-epson;     
+    color: #039;
+  }
+}
+.logo-esea {
+  &:before {
+    content: $logo-esea;     
+    color: #0e9648;
+  }
+}
+.logo-eslint {
+  &:before {
+    content: $logo-eslint;     
+    color: #4b32c3;
+  }
+}
+.logo-ethereum {
+  &:before {
+    content: $logo-ethereum; 
+  }
+}
+.logo-etsy {
+  &:before {
+    content: $logo-etsy;     
+    color: #f16521;
+  }
+}
+.logo-eventbrite {
+  &:before {
+    content: $logo-eventbrite;     
+    color: #f05537;
+  }
+}
+.logo-eventstore {
+  &:before {
+    content: $logo-eventstore;     
+    color: #5ab552;
+  }
+}
+.logo-evernote {
+  &:before {
+    content: $logo-evernote;     
+    color: #00a82d;
+  }
+}
+.logo-everplaces {
+  &:before {
+    content: $logo-everplaces;     
+    color: #fa4b32;
+  }
+}
+.logo-evry {
+  &:before {
+    content: $logo-evry;     
+    color: #063a54;
+  }
+}
+.logo-exercism {
+  &:before {
+    content: $logo-exercism;     
+    color: #009cab;
+  }
+}
+.logo-expertsexchange {
+  &:before {
+    content: $logo-expertsexchange;     
+    color: #00aae7;
+  }
+}
+.logo-expo {
+  &:before {
+    content: $logo-expo; 
+  }
+}
+.logo-eyeem {
+  &:before {
+    content: $logo-eyeem; 
+  }
+}
+.logo-f-droid {
+  &:before {
+    content: $logo-f-droid;     
+    color: #1976d2;
+  }
+}
+.logo-f-secure {
+  &:before {
+    content: $logo-f-secure;     
+    color: #00baff;
+  }
+}
+.logo-facebook {
+  &:before {
+    content: $logo-facebook;     
+    color: #1877f2;
+  }
+}
+.logo-faceit {
+  &:before {
+    content: $logo-faceit;     
+    color: #f50;
+  }
+}
+.logo-fandango {
+  &:before {
+    content: $logo-fandango;     
+    color: #ff7300;
+  }
+}
+.logo-favro {
+  &:before {
+    content: $logo-favro;     
+    color: #512da8;
+  }
+}
+.logo-feathub {
+  &:before {
+    content: $logo-feathub;     
+    color: #9b9b9b;
+  }
+}
+.logo-fedora {
+  &:before {
+    content: $logo-fedora;     
+    color: #294172;
+  }
+}
+.logo-feedly {
+  &:before {
+    content: $logo-feedly;     
+    color: #2bb24c;
+  }
+}
+.logo-fidoalliance {
+  &:before {
+    content: $logo-fidoalliance;     
+    color: #ffbf3b;
+  }
+}
+.logo-figma {
+  &:before {
+    content: $logo-figma;     
+    color: #f24e1e;
+  }
+}
+.logo-filezilla {
+  &:before {
+    content: $logo-filezilla;     
+    color: #bf0000;
+  }
+}
+.logo-firebase {
+  &:before {
+    content: $logo-firebase;     
+    color: #ffca28;
+  }
+}
+.logo-fitbit {
+  &:before {
+    content: $logo-fitbit;     
+    color: #00b0b9;
+  }
+}
+.logo-fiverr {
+  &:before {
+    content: $logo-fiverr;     
+    color: #1dbf73;
+  }
+}
+.logo-flask {
+  &:before {
+    content: $logo-flask; 
+  }
+}
+.logo-flattr {
+  &:before {
+    content: $logo-flattr; 
+  }
+}
+.logo-flickr {
+  &:before {
+    content: $logo-flickr;     
+    color: #0063dc;
+  }
+}
+.logo-flipboard {
+  &:before {
+    content: $logo-flipboard;     
+    color: #e12828;
+  }
+}
+.logo-floatplane {
+  &:before {
+    content: $logo-floatplane;     
+    color: #00aeef;
+  }
+}
+.logo-flutter {
+  &:before {
+    content: $logo-flutter;     
+    color: #02569b;
+  }
+}
+.logo-fnac {
+  &:before {
+    content: $logo-fnac;     
+    color: #e1a925;
+  }
+}
+.logo-formstack {
+  &:before {
+    content: $logo-formstack;     
+    color: #21b573;
+  }
+}
+.logo-fossa {
+  &:before {
+    content: $logo-fossa;     
+    color: #90a1b8;
+  }
+}
+.logo-fossilscm {
+  &:before {
+    content: $logo-fossilscm;     
+    color: #548294;
+  }
+}
+.logo-foursquare {
+  &:before {
+    content: $logo-foursquare;     
+    color: #f94877;
+  }
+}
+.logo-framer {
+  &:before {
+    content: $logo-framer;     
+    color: #05f;
+  }
+}
+.logo-freebsd {
+  &:before {
+    content: $logo-freebsd;     
+    color: #ab2b28;
+  }
+}
+.logo-freecodecamp {
+  &:before {
+    content: $logo-freecodecamp;     
+    color: #006400;
+  }
+}
+.logo-fujifilm {
+  &:before {
+    content: $logo-fujifilm;     
+    color: #ed1a3a;
+  }
+}
+.logo-fujitsu {
+  &:before {
+    content: $logo-fujitsu;     
+    color: #f00;
+  }
+}
+.logo-furaffinity {
+  &:before {
+    content: $logo-furaffinity;     
+    color: #faaf3a;
+  }
+}
+.logo-furrynetwork {
+  &:before {
+    content: $logo-furrynetwork;     
+    color: #2e75b4;
+  }
+}
+.logo-garmin {
+  &:before {
+    content: $logo-garmin;     
+    color: #007cc3;
+  }
+}
+.logo-gatsby {
+  &:before {
+    content: $logo-gatsby;     
+    color: #639;
+  }
+}
+.logo-gauges {
+  &:before {
+    content: $logo-gauges;     
+    color: #2fa66a;
+  }
+}
+.logo-genius {
+  &:before {
+    content: $logo-genius;     
+    color: #ffff64;
+  }
+}
+.logo-gentoo {
+  &:before {
+    content: $logo-gentoo;     
+    color: #54487a;
+  }
+}
+.logo-geocaching {
+  &:before {
+    content: $logo-geocaching;     
+    color: #00874d;
+  }
+}
+.logo-gerrit {
+  &:before {
+    content: $logo-gerrit;     
+    color: #eee;
+  }
+}
+.logo-ghost {
+  &:before {
+    content: $logo-ghost;     
+    color: #738a94;
+  }
+}
+.logo-gimp {
+  &:before {
+    content: $logo-gimp;     
+    color: #5c5543;
+  }
+}
+.logo-git {
+  &:before {
+    content: $logo-git;     
+    color: #f05032;
+  }
+}
+.logo-gitea {
+  &:before {
+    content: $logo-gitea;     
+    color: #609926;
+  }
+}
+.logo-github {
+  &:before {
+    content: $logo-github; 
+  }
+}
+.logo-gitlab {
+  &:before {
+    content: $logo-gitlab;     
+    color: #fca121;
+  }
+}
+.logo-gitpod {
+  &:before {
+    content: $logo-gitpod;     
+    color: #1aa6e4;
+  }
+}
+.logo-gitter {
+  &:before {
+    content: $logo-gitter;     
+    color: #ed1965;
+  }
+}
+.logo-glassdoor {
+  &:before {
+    content: $logo-glassdoor;     
+    color: #0caa41;
+  }
+}
+.logo-glitch {
+  &:before {
+    content: $logo-glitch;     
+    color: #33f;
+  }
+}
+.logo-gmail {
+  &:before {
+    content: $logo-gmail;     
+    color: #d14836;
+  }
+}
+.logo-gnome {
+  &:before {
+    content: $logo-gnome;     
+    color: #4a86cf;
+  }
+}
+.logo-gnu {
+  &:before {
+    content: $logo-gnu;     
+    color: #a42e2b;
+  }
+}
+.logo-gnuicecat {
+  &:before {
+    content: $logo-gnuicecat;     
+    color: #002f5b;
+  }
+}
+.logo-gnuprivacyguard {
+  &:before {
+    content: $logo-gnuprivacyguard;     
+    color: #0093dd;
+  }
+}
+.logo-gnusocial {
+  &:before {
+    content: $logo-gnusocial;     
+    color: #a22430;
+  }
+}
+.logo-go {
+  &:before {
+    content: $logo-go;     
+    color: #00add8;
+  }
+}
+.logo-godotengine {
+  &:before {
+    content: $logo-godotengine;     
+    color: #478cbf;
+  }
+}
+.logo-gog-dot-com {
+  &:before {
+    content: $logo-gog-dot-com;     
+    color: #86328a;
+  }
+}
+.logo-goldenline {
+  &:before {
+    content: $logo-goldenline;     
+    color: #f1b92b;
+  }
+}
+.logo-goodreads {
+  &:before {
+    content: $logo-goodreads;     
+    color: #630;
+  }
+}
+.logo-google {
+  &:before {
+    content: $logo-google;     
+    color: #4285f4;
+  }
+}
+.logo-googleads {
+  &:before {
+    content: $logo-googleads;     
+    color: #4285f4;
+  }
+}
+.logo-googleanalytics {
+  &:before {
+    content: $logo-googleanalytics;     
+    color: #ffc107;
+  }
+}
+.logo-googlechrome {
+  &:before {
+    content: $logo-googlechrome;     
+    color: #4285f4;
+  }
+}
+.logo-googlecloud {
+  &:before {
+    content: $logo-googlecloud;     
+    color: #4285f4;
+  }
+}
+.logo-googledrive {
+  &:before {
+    content: $logo-googledrive;     
+    color: #4285f4;
+  }
+}
+.logo-googlehangouts {
+  &:before {
+    content: $logo-googlehangouts;     
+    color: #0c9d58;
+  }
+}
+.logo-googlehangoutschat {
+  &:before {
+    content: $logo-googlehangoutschat;     
+    color: #00897b;
+  }
+}
+.logo-googlekeep {
+  &:before {
+    content: $logo-googlekeep;     
+    color: #fb0;
+  }
+}
+.logo-googlepay {
+  &:before {
+    content: $logo-googlepay;     
+    color: #5f6368;
+  }
+}
+.logo-googleplay {
+  &:before {
+    content: $logo-googleplay;     
+    color: #607d8b;
+  }
+}
+.logo-googlepodcasts {
+  &:before {
+    content: $logo-googlepodcasts;     
+    color: #4285f4;
+  }
+}
+.logo-googlescholar {
+  &:before {
+    content: $logo-googlescholar;     
+    color: #4885ed;
+  }
+}
+.logo-googlesearchconsole {
+  &:before {
+    content: $logo-googlesearchconsole;     
+    color: #458cf5;
+  }
+}
+.logo-gov-dot-uk {
+  &:before {
+    content: $logo-gov-dot-uk;     
+    color: #005ea5;
+  }
+}
+.logo-gradle {
+  &:before {
+    content: $logo-gradle; 
+  }
+}
+.logo-grafana {
+  &:before {
+    content: $logo-grafana;     
+    color: #f46800;
+  }
+}
+.logo-graphcool {
+  &:before {
+    content: $logo-graphcool;     
+    color: #27ae60;
+  }
+}
+.logo-graphql {
+  &:before {
+    content: $logo-graphql;     
+    color: #e10098;
+  }
+}
+.logo-grav {
+  &:before {
+    content: $logo-grav; 
+  }
+}
+.logo-gravatar {
+  &:before {
+    content: $logo-gravatar;     
+    color: #1e8cbe;
+  }
+}
+.logo-greenkeeper {
+  &:before {
+    content: $logo-greenkeeper;     
+    color: #00c775;
+  }
+}
+.logo-greensock {
+  &:before {
+    content: $logo-greensock;     
+    color: #88ce02;
+  }
+}
+.logo-groovy {
+  &:before {
+    content: $logo-groovy;     
+    color: #4298b8;
+  }
+}
+.logo-groupon {
+  &:before {
+    content: $logo-groupon;     
+    color: #53a318;
+  }
+}
+.logo-gulp {
+  &:before {
+    content: $logo-gulp;     
+    color: #da4648;
+  }
+}
+.logo-gumroad {
+  &:before {
+    content: $logo-gumroad;     
+    color: #36a9ae;
+  }
+}
+.logo-gumtree {
+  &:before {
+    content: $logo-gumtree;     
+    color: #72ef36;
+  }
+}
+.logo-gutenberg {
+  &:before {
+    content: $logo-gutenberg; 
+  }
+}
+.logo-habr {
+  &:before {
+    content: $logo-habr;     
+    color: #77a2b6;
+  }
+}
+.logo-hackaday {
+  &:before {
+    content: $logo-hackaday; 
+  }
+}
+.logo-hackerearth {
+  &:before {
+    content: $logo-hackerearth;     
+    color: #323754;
+  }
+}
+.logo-hackerone {
+  &:before {
+    content: $logo-hackerone;     
+    color: #494649;
+  }
+}
+.logo-hackerrank {
+  &:before {
+    content: $logo-hackerrank;     
+    color: #2ec866;
+  }
+}
+.logo-hackhands {
+  &:before {
+    content: $logo-hackhands;     
+    color: #00acbd;
+  }
+}
+.logo-hackster {
+  &:before {
+    content: $logo-hackster;     
+    color: #1bacf7;
+  }
+}
+.logo-happycow {
+  &:before {
+    content: $logo-happycow;     
+    color: #7c4ec4;
+  }
+}
+.logo-hashnode {
+  &:before {
+    content: $logo-hashnode;     
+    color: #2962ff;
+  }
+}
+.logo-haskell {
+  &:before {
+    content: $logo-haskell;     
+    color: #5d4f85;
+  }
+}
+.logo-hatenabookmark {
+  &:before {
+    content: $logo-hatenabookmark;     
+    color: #00a4de;
+  }
+}
+.logo-haxe {
+  &:before {
+    content: $logo-haxe;     
+    color: #ea8220;
+  }
+}
+.logo-helm {
+  &:before {
+    content: $logo-helm;     
+    color: #277a9f;
+  }
+}
+.logo-here {
+  &:before {
+    content: $logo-here;     
+    color: #48dad0;
+  }
+}
+.logo-heroku {
+  &:before {
+    content: $logo-heroku;     
+    color: #430098;
+  }
+}
+.logo-hexo {
+  &:before {
+    content: $logo-hexo;     
+    color: #0e83cd;
+  }
+}
+.logo-highly {
+  &:before {
+    content: $logo-highly;     
+    color: #ff3c00;
+  }
+}
+.logo-hipchat {
+  &:before {
+    content: $logo-hipchat;     
+    color: #0052cc;
+  }
+}
+.logo-hitachi {
+  &:before {
+    content: $logo-hitachi;     
+    color: #e60027;
+  }
+}
+.logo-hockeyapp {
+  &:before {
+    content: $logo-hockeyapp;     
+    color: #009ee1;
+  }
+}
+.logo-homeassistant {
+  &:before {
+    content: $logo-homeassistant;     
+    color: #41bdf5;
+  }
+}
+.logo-homify {
+  &:before {
+    content: $logo-homify;     
+    color: #7dcda3;
+  }
+}
+.logo-hootsuite {
+  &:before {
+    content: $logo-hootsuite; 
+  }
+}
+.logo-houzz {
+  &:before {
+    content: $logo-houzz;     
+    color: #4dbc15;
+  }
+}
+.logo-hp {
+  &:before {
+    content: $logo-hp;     
+    color: #0096d6;
+  }
+}
+.logo-html5 {
+  &:before {
+    content: $logo-html5;     
+    color: #e34f26;
+  }
+}
+.logo-htmlacademy {
+  &:before {
+    content: $logo-htmlacademy;     
+    color: #302683;
+  }
+}
+.logo-huawei {
+  &:before {
+    content: $logo-huawei;     
+    color: #f00;
+  }
+}
+.logo-hubspot {
+  &:before {
+    content: $logo-hubspot;     
+    color: #ff7a59;
+  }
+}
+.logo-hulu {
+  &:before {
+    content: $logo-hulu;     
+    color: #3dbb3d;
+  }
+}
+.logo-humblebundle {
+  &:before {
+    content: $logo-humblebundle;     
+    color: #cc2929;
+  }
+}
+.logo-hurriyetemlak {
+  &:before {
+    content: $logo-hurriyetemlak;     
+    color: #e02826;
+  }
+}
+.logo-hypothesis {
+  &:before {
+    content: $logo-hypothesis;     
+    color: #bd1c2b;
+  }
+}
+.logo-iata {
+  &:before {
+    content: $logo-iata;     
+    color: #004e81;
+  }
+}
+.logo-ibm {
+  &:before {
+    content: $logo-ibm;     
+    color: #054ada;
+  }
+}
+.logo-icloud {
+  &:before {
+    content: $logo-icloud;     
+    color: #3693f3;
+  }
+}
+.logo-icomoon {
+  &:before {
+    content: $logo-icomoon;     
+    color: #825794;
+  }
+}
+.logo-icon {
+  &:before {
+    content: $logo-icon;     
+    color: #31b8bb;
+  }
+}
+.logo-iconjar {
+  &:before {
+    content: $logo-iconjar;     
+    color: #16a5f3;
+  }
+}
+.logo-icq {
+  &:before {
+    content: $logo-icq;     
+    color: #7ebd00;
+  }
+}
+.logo-ideal {
+  &:before {
+    content: $logo-ideal;     
+    color: #c06;
+  }
+}
+.logo-ifixit {
+  &:before {
+    content: $logo-ifixit;     
+    color: #0071ce;
+  }
+}
+.logo-imdb {
+  &:before {
+    content: $logo-imdb;     
+    color: #e6b91e;
+  }
+}
+.logo-imgur {
+  &:before {
+    content: $logo-imgur;     
+    color: #1bb76e;
+  }
+}
+.logo-indeed {
+  &:before {
+    content: $logo-indeed;     
+    color: #2164f3;
+  }
+}
+.logo-influxdb {
+  &:before {
+    content: $logo-influxdb;     
+    color: #22adf6;
+  }
+}
+.logo-inkscape {
+  &:before {
+    content: $logo-inkscape; 
+  }
+}
+.logo-instacart {
+  &:before {
+    content: $logo-instacart;     
+    color: #43b02a;
+  }
+}
+.logo-instagram {
+  &:before {
+    content: $logo-instagram;     
+    color: #e4405f;
+  }
+}
+.logo-instapaper {
+  &:before {
+    content: $logo-instapaper; 
+  }
+}
+.logo-intel {
+  &:before {
+    content: $logo-intel;     
+    color: #0071c5;
+  }
+}
+.logo-intellijidea {
+  &:before {
+    content: $logo-intellijidea; 
+  }
+}
+.logo-intercom {
+  &:before {
+    content: $logo-intercom;     
+    color: #1f8ded;
+  }
+}
+.logo-internetarchive {
+  &:before {
+    content: $logo-internetarchive; 
+  }
+}
+.logo-internetexplorer {
+  &:before {
+    content: $logo-internetexplorer;     
+    color: #0076d6;
+  }
+}
+.logo-invision {
+  &:before {
+    content: $logo-invision;     
+    color: #f36;
+  }
+}
+.logo-invoiceninja {
+  &:before {
+    content: $logo-invoiceninja; 
+  }
+}
+.logo-ionic {
+  &:before {
+    content: $logo-ionic;     
+    color: #3880ff;
+  }
+}
+.logo-ios {
+  &:before {
+    content: $logo-ios; 
+  }
+}
+.logo-ipfs {
+  &:before {
+    content: $logo-ipfs;     
+    color: #65c2cb;
+  }
+}
+.logo-issuu {
+  &:before {
+    content: $logo-issuu;     
+    color: #f36d5d;
+  }
+}
+.logo-itch-dot-io {
+  &:before {
+    content: $logo-itch-dot-io;     
+    color: #fa5c5c;
+  }
+}
+.logo-itunes {
+  &:before {
+    content: $logo-itunes;     
+    color: #fb5bc5;
+  }
+}
+.logo-jabber {
+  &:before {
+    content: $logo-jabber;     
+    color: #c00;
+  }
+}
+.logo-java {
+  &:before {
+    content: $logo-java;     
+    color: #007396;
+  }
+}
+.logo-javascript {
+  &:before {
+    content: $logo-javascript;     
+    color: #f7df1e;
+  }
+}
+.logo-jekyll {
+  &:before {
+    content: $logo-jekyll;     
+    color: #c00;
+  }
+}
+.logo-jenkins {
+  &:before {
+    content: $logo-jenkins;     
+    color: #d24939;
+  }
+}
+.logo-jest {
+  &:before {
+    content: $logo-jest;     
+    color: #c21325;
+  }
+}
+.logo-jet {
+  &:before {
+    content: $logo-jet;     
+    color: #fbba00;
+  }
+}
+.logo-jetbrains {
+  &:before {
+    content: $logo-jetbrains; 
+  }
+}
+.logo-jinja {
+  &:before {
+    content: $logo-jinja;     
+    color: #b41717;
+  }
+}
+.logo-jira {
+  &:before {
+    content: $logo-jira; 
+  }
+}
+.logo-joomla {
+  &:before {
+    content: $logo-joomla;     
+    color: #5091cd;
+  }
+}
+.logo-jquery {
+  &:before {
+    content: $logo-jquery;     
+    color: #0769ad;
+  }
+}
+.logo-jsdelivr {
+  &:before {
+    content: $logo-jsdelivr;     
+    color: #e84d3d;
+  }
+}
+.logo-jsfiddle {
+  &:before {
+    content: $logo-jsfiddle;     
+    color: #4679a4;
+  }
+}
+.logo-json {
+  &:before {
+    content: $logo-json; 
+  }
+}
+.logo-jupyter {
+  &:before {
+    content: $logo-jupyter;     
+    color: #f37626;
+  }
+}
+.logo-justgiving {
+  &:before {
+    content: $logo-justgiving;     
+    color: #ad29b6;
+  }
+}
+.logo-kaggle {
+  &:before {
+    content: $logo-kaggle;     
+    color: #20beff;
+  }
+}
+.logo-kaios {
+  &:before {
+    content: $logo-kaios;     
+    color: #6f02b5;
+  }
+}
+.logo-kaspersky {
+  &:before {
+    content: $logo-kaspersky;     
+    color: #009982;
+  }
+}
+.logo-kentico {
+  &:before {
+    content: $logo-kentico;     
+    color: #f05a22;
+  }
+}
+.logo-keras {
+  &:before {
+    content: $logo-keras;     
+    color: #d00000;
+  }
+}
+.logo-keybase {
+  &:before {
+    content: $logo-keybase;     
+    color: #33a0ff;
+  }
+}
+.logo-keycdn {
+  &:before {
+    content: $logo-keycdn;     
+    color: #3686be;
+  }
+}
+.logo-khanacademy {
+  &:before {
+    content: $logo-khanacademy;     
+    color: #14bf96;
+  }
+}
+.logo-kibana {
+  &:before {
+    content: $logo-kibana;     
+    color: #005571;
+  }
+}
+.logo-kickstarter {
+  &:before {
+    content: $logo-kickstarter;     
+    color: #2bde73;
+  }
+}
+.logo-kik {
+  &:before {
+    content: $logo-kik;     
+    color: #82bc23;
+  }
+}
+.logo-kirby {
+  &:before {
+    content: $logo-kirby;     
+    color: #ff0100;
+  }
+}
+.logo-klout {
+  &:before {
+    content: $logo-klout;     
+    color: #e44600;
+  }
+}
+.logo-known {
+  &:before {
+    content: $logo-known; 
+  }
+}
+.logo-ko-fi {
+  &:before {
+    content: $logo-ko-fi;     
+    color: #f16061;
+  }
+}
+.logo-kodi {
+  &:before {
+    content: $logo-kodi;     
+    color: #17b2e7;
+  }
+}
+.logo-koding {
+  &:before {
+    content: $logo-koding;     
+    color: #00b057;
+  }
+}
+.logo-kotlin {
+  &:before {
+    content: $logo-kotlin;     
+    color: #0095d5;
+  }
+}
+.logo-krita {
+  &:before {
+    content: $logo-krita;     
+    color: #3babff;
+  }
+}
+.logo-kubernetes {
+  &:before {
+    content: $logo-kubernetes;     
+    color: #326ce5;
+  }
+}
+.logo-laravel {
+  &:before {
+    content: $logo-laravel;     
+    color: #ff2d20;
+  }
+}
+.logo-laravelhorizon {
+  &:before {
+    content: $logo-laravelhorizon;     
+    color: #405263;
+  }
+}
+.logo-laravelnova {
+  &:before {
+    content: $logo-laravelnova; 
+  }
+}
+.logo-last-dot-fm {
+  &:before {
+    content: $logo-last-dot-fm;     
+    color: #d51007;
+  }
+}
+.logo-lastpass {
+  &:before {
+    content: $logo-lastpass;     
+    color: #d32d27;
+  }
+}
+.logo-latex {
+  &:before {
+    content: $logo-latex;     
+    color: #008080;
+  }
+}
+.logo-launchpad {
+  &:before {
+    content: $logo-launchpad;     
+    color: #f8c300;
+  }
+}
+.logo-leetcode {
+  &:before {
+    content: $logo-leetcode;     
+    color: #f89f1b;
+  }
+}
+.logo-lenovo {
+  &:before {
+    content: $logo-lenovo;     
+    color: #e2231a;
+  }
+}
+.logo-letsencrypt {
+  &:before {
+    content: $logo-letsencrypt;     
+    color: #003a70;
+  }
+}
+.logo-letterboxd {
+  &:before {
+    content: $logo-letterboxd;     
+    color: #00d735;
+  }
+}
+.logo-lgtm {
+  &:before {
+    content: $logo-lgtm;     
+    color: #fff;
+  }
+}
+.logo-liberapay {
+  &:before {
+    content: $logo-liberapay;     
+    color: #f6c915;
+  }
+}
+.logo-librarything {
+  &:before {
+    content: $logo-librarything; 
+  }
+}
+.logo-libreoffice {
+  &:before {
+    content: $logo-libreoffice;     
+    color: #18a303;
+  }
+}
+.logo-line {
+  &:before {
+    content: $logo-line;     
+    color: #00c300;
+  }
+}
+.logo-linewebtoon {
+  &:before {
+    content: $logo-linewebtoon;     
+    color: #00d564;
+  }
+}
+.logo-linkedin {
+  &:before {
+    content: $logo-linkedin;     
+    color: #0077b5;
+  }
+}
+.logo-linode {
+  &:before {
+    content: $logo-linode;     
+    color: #00a95c;
+  }
+}
+.logo-linux {
+  &:before {
+    content: $logo-linux;     
+    color: #fcc624;
+  }
+}
+.logo-linuxfoundation {
+  &:before {
+    content: $logo-linuxfoundation;     
+    color: #009bee;
+  }
+}
+.logo-linuxmint {
+  &:before {
+    content: $logo-linuxmint;     
+    color: #87cf3e;
+  }
+}
+.logo-livejournal {
+  &:before {
+    content: $logo-livejournal;     
+    color: #00b0ea;
+  }
+}
+.logo-livestream {
+  &:before {
+    content: $logo-livestream;     
+    color: #cf202e;
+  }
+}
+.logo-llvm {
+  &:before {
+    content: $logo-llvm; 
+  }
+}
+.logo-logstash {
+  &:before {
+    content: $logo-logstash;     
+    color: #005571;
+  }
+}
+.logo-loop {
+  &:before {
+    content: $logo-loop;     
+    color: #f29400;
+  }
+}
+.logo-lua {
+  &:before {
+    content: $logo-lua;     
+    color: #2c2d72;
+  }
+}
+.logo-lufthansa {
+  &:before {
+    content: $logo-lufthansa;     
+    color: #05164d;
+  }
+}
+.logo-lumen {
+  &:before {
+    content: $logo-lumen;     
+    color: #e74430;
+  }
+}
+.logo-lyft {
+  &:before {
+    content: $logo-lyft;     
+    color: #ff00bf;
+  }
+}
+.logo-macys {
+  &:before {
+    content: $logo-macys;     
+    color: #e21a2c;
+  }
+}
+.logo-magento {
+  &:before {
+    content: $logo-magento;     
+    color: #ee672f;
+  }
+}
+.logo-magisk {
+  &:before {
+    content: $logo-magisk;     
+    color: #00af9c;
+  }
+}
+.logo-mail-dot-ru {
+  &:before {
+    content: $logo-mail-dot-ru;     
+    color: #168de2;
+  }
+}
+.logo-mailchimp {
+  &:before {
+    content: $logo-mailchimp;     
+    color: #ffe01b;
+  }
+}
+.logo-makerbot {
+  &:before {
+    content: $logo-makerbot;     
+    color: #ff1e0d;
+  }
+}
+.logo-manageiq {
+  &:before {
+    content: $logo-manageiq;     
+    color: #ef2929;
+  }
+}
+.logo-manjaro {
+  &:before {
+    content: $logo-manjaro;     
+    color: #35bf5c;
+  }
+}
+.logo-mapbox {
+  &:before {
+    content: $logo-mapbox; 
+  }
+}
+.logo-markdown {
+  &:before {
+    content: $logo-markdown; 
+  }
+}
+.logo-marketo {
+  &:before {
+    content: $logo-marketo;     
+    color: #5c4c9f;
+  }
+}
+.logo-mastercard1 {
+  &:before {
+    content: $logo-mastercard1;     
+    color: #eb001b;
+  }
+}
+.logo-mastodon {
+  &:before {
+    content: $logo-mastodon;     
+    color: #3088d4;
+  }
+}
+.logo-materialdesign {
+  &:before {
+    content: $logo-materialdesign;     
+    color: #757575;
+  }
+}
+.logo-mathworks {
+  &:before {
+    content: $logo-mathworks;     
+    color: #0076a8;
+  }
+}
+.logo-matrix {
+  &:before {
+    content: $logo-matrix; 
+  }
+}
+.logo-mattermost {
+  &:before {
+    content: $logo-mattermost;     
+    color: #0072c6;
+  }
+}
+.logo-matternet {
+  &:before {
+    content: $logo-matternet; 
+  }
+}
+.logo-mcafee {
+  &:before {
+    content: $logo-mcafee;     
+    color: #c01818;
+  }
+}
+.logo-mdnwebdocs {
+  &:before {
+    content: $logo-mdnwebdocs; 
+  }
+}
+.logo-mediafire {
+  &:before {
+    content: $logo-mediafire;     
+    color: #1299f3;
+  }
+}
+.logo-mediatemple {
+  &:before {
+    content: $logo-mediatemple; 
+  }
+}
+.logo-medium {
+  &:before {
+    content: $logo-medium; 
+  }
+}
+.logo-meetup {
+  &:before {
+    content: $logo-meetup;     
+    color: #ed1c40;
+  }
+}
+.logo-mega {
+  &:before {
+    content: $logo-mega;     
+    color: #d9272e;
+  }
+}
+.logo-mendeley {
+  &:before {
+    content: $logo-mendeley;     
+    color: #9d1620;
+  }
+}
+.logo-mercedes {
+  &:before {
+    content: $logo-mercedes; 
+  }
+}
+.logo-messenger {
+  &:before {
+    content: $logo-messenger;     
+    color: #00b2ff;
+  }
+}
+.logo-meteor {
+  &:before {
+    content: $logo-meteor;     
+    color: #de4f4f;
+  }
+}
+.logo-micro-dot-blog {
+  &:before {
+    content: $logo-micro-dot-blog;     
+    color: #fd8308;
+  }
+}
+.logo-microgenetics {
+  &:before {
+    content: $logo-microgenetics;     
+    color: #f00;
+  }
+}
+.logo-microsoft {
+  &:before {
+    content: $logo-microsoft;     
+    color: #666;
+  }
+}
+.logo-microsoftaccess {
+  &:before {
+    content: $logo-microsoftaccess;     
+    color: #ba141a;
+  }
+}
+.logo-microsoftazure {
+  &:before {
+    content: $logo-microsoftazure;     
+    color: #0089d6;
+  }
+}
+.logo-microsoftedge {
+  &:before {
+    content: $logo-microsoftedge;     
+    color: #0078d7;
+  }
+}
+.logo-microsoftexcel {
+  &:before {
+    content: $logo-microsoftexcel;     
+    color: #217346;
+  }
+}
+.logo-microsoftoffice {
+  &:before {
+    content: $logo-microsoftoffice;     
+    color: #e74025;
+  }
+}
+.logo-microsoftonedrive {
+  &:before {
+    content: $logo-microsoftonedrive;     
+    color: #094ab2;
+  }
+}
+.logo-microsoftonenote {
+  &:before {
+    content: $logo-microsoftonenote;     
+    color: #80397b;
+  }
+}
+.logo-microsoftoutlook {
+  &:before {
+    content: $logo-microsoftoutlook;     
+    color: #0072c6;
+  }
+}
+.logo-microsoftpowerpoint {
+  &:before {
+    content: $logo-microsoftpowerpoint;     
+    color: #d24726;
+  }
+}
+.logo-microsoftteams {
+  &:before {
+    content: $logo-microsoftteams;     
+    color: #6264a7;
+  }
+}
+.logo-microsoftword {
+  &:before {
+    content: $logo-microsoftword;     
+    color: #2b579a;
+  }
+}
+.logo-microstrategy {
+  &:before {
+    content: $logo-microstrategy;     
+    color: #d9232e;
+  }
+}
+.logo-minds {
+  &:before {
+    content: $logo-minds;     
+    color: #fed12f;
+  }
+}
+.logo-minetest {
+  &:before {
+    content: $logo-minetest;     
+    color: #53ac56;
+  }
+}
+.logo-minutemailer {
+  &:before {
+    content: $logo-minutemailer;     
+    color: #3abfe6;
+  }
+}
+.logo-mix {
+  &:before {
+    content: $logo-mix;     
+    color: #ff8126;
+  }
+}
+.logo-mixcloud {
+  &:before {
+    content: $logo-mixcloud;     
+    color: #314359;
+  }
+}
+.logo-mixer {
+  &:before {
+    content: $logo-mixer;     
+    color: #002050;
+  }
+}
+.logo-mojang {
+  &:before {
+    content: $logo-mojang;     
+    color: #db1f29;
+  }
+}
+.logo-monero {
+  &:before {
+    content: $logo-monero;     
+    color: #f60;
+  }
+}
+.logo-mongodb {
+  &:before {
+    content: $logo-mongodb;     
+    color: #47a248;
+  }
+}
+.logo-monkeytie {
+  &:before {
+    content: $logo-monkeytie;     
+    color: #ffc619;
+  }
+}
+.logo-monogram {
+  &:before {
+    content: $logo-monogram;     
+    color: #fdb22a;
+  }
+}
+.logo-monster {
+  &:before {
+    content: $logo-monster;     
+    color: #6e46ae;
+  }
+}
+.logo-monzo {
+  &:before {
+    content: $logo-monzo; 
+  }
+}
+.logo-moo {
+  &:before {
+    content: $logo-moo;     
+    color: #00945e;
+  }
+}
+.logo-mozilla {
+  &:before {
+    content: $logo-mozilla; 
+  }
+}
+.logo-mozillafirefox {
+  &:before {
+    content: $logo-mozillafirefox;     
+    color: #ff7139;
+  }
+}
+.logo-musescore {
+  &:before {
+    content: $logo-musescore;     
+    color: #1a70b8;
+  }
+}
+.logo-mxlinux {
+  &:before {
+    content: $logo-mxlinux; 
+  }
+}
+.logo-myspace {
+  &:before {
+    content: $logo-myspace; 
+  }
+}
+.logo-mysql {
+  &:before {
+    content: $logo-mysql;     
+    color: #4479a1;
+  }
+}
+.logo-nativescript {
+  &:before {
+    content: $logo-nativescript;     
+    color: #3655ff;
+  }
+}
+.logo-nec {
+  &:before {
+    content: $logo-nec;     
+    color: #1414a0;
+  }
+}
+.logo-neo4j {
+  &:before {
+    content: $logo-neo4j;     
+    color: #008cc1;
+  }
+}
+.logo-netflix {
+  &:before {
+    content: $logo-netflix;     
+    color: #e50914;
+  }
+}
+.logo-netlify {
+  &:before {
+    content: $logo-netlify;     
+    color: #00c7b7;
+  }
+}
+.logo-next-dot-js {
+  &:before {
+    content: $logo-next-dot-js; 
+  }
+}
+.logo-nextcloud {
+  &:before {
+    content: $logo-nextcloud;     
+    color: #0082c9;
+  }
+}
+.logo-nextdoor {
+  &:before {
+    content: $logo-nextdoor;     
+    color: #00b246;
+  }
+}
+.logo-nginx {
+  &:before {
+    content: $logo-nginx;     
+    color: #269539;
+  }
+}
+.logo-nim {
+  &:before {
+    content: $logo-nim;     
+    color: #ffe953;
+  }
+}
+.logo-nintendo {
+  &:before {
+    content: $logo-nintendo;     
+    color: #8f8f8f;
+  }
+}
+.logo-nintendo3ds {
+  &:before {
+    content: $logo-nintendo3ds;     
+    color: #d12228;
+  }
+}
+.logo-nintendogamecube {
+  &:before {
+    content: $logo-nintendogamecube;     
+    color: #6a5fbb;
+  }
+}
+.logo-nintendoswitch {
+  &:before {
+    content: $logo-nintendoswitch;     
+    color: #e60012;
+  }
+}
+.logo-node-dot-js {
+  &:before {
+    content: $logo-node-dot-js;     
+    color: #393;
+  }
+}
+.logo-node-red {
+  &:before {
+    content: $logo-node-red;     
+    color: #8f0000;
+  }
+}
+.logo-nodemon {
+  &:before {
+    content: $logo-nodemon;     
+    color: #76d04b;
+  }
+}
+.logo-nokia {
+  &:before {
+    content: $logo-nokia;     
+    color: #124191;
+  }
+}
+.logo-notion {
+  &:before {
+    content: $logo-notion; 
+  }
+}
+.logo-notist {
+  &:before {
+    content: $logo-notist; 
+  }
+}
+.logo-npm {
+  &:before {
+    content: $logo-npm;     
+    color: #cb3837;
+  }
+}
+.logo-nucleo {
+  &:before {
+    content: $logo-nucleo;     
+    color: #766dcc;
+  }
+}
+.logo-nuget {
+  &:before {
+    content: $logo-nuget;     
+    color: #004880;
+  }
+}
+.logo-nutanix {
+  &:before {
+    content: $logo-nutanix;     
+    color: #024da1;
+  }
+}
+.logo-nuxt-dot-js {
+  &:before {
+    content: $logo-nuxt-dot-js;     
+    color: #00c58e;
+  }
+}
+.logo-nvidia {
+  &:before {
+    content: $logo-nvidia;     
+    color: #76b900;
+  }
+}
+.logo-obsstudio {
+  &:before {
+    content: $logo-obsstudio; 
+  }
+}
+.logo-ocaml {
+  &:before {
+    content: $logo-ocaml;     
+    color: #ec6813;
+  }
+}
+.logo-octave {
+  &:before {
+    content: $logo-octave;     
+    color: #0790c0;
+  }
+}
+.logo-octopusdeploy {
+  &:before {
+    content: $logo-octopusdeploy;     
+    color: #2f93e0;
+  }
+}
+.logo-oculus {
+  &:before {
+    content: $logo-oculus; 
+  }
+}
+.logo-odnoklassniki {
+  &:before {
+    content: $logo-odnoklassniki;     
+    color: #f4731c;
+  }
+}
+.logo-openaccess {
+  &:before {
+    content: $logo-openaccess;     
+    color: #f68212;
+  }
+}
+.logo-openapiinitiative {
+  &:before {
+    content: $logo-openapiinitiative;     
+    color: #6ba539;
+  }
+}
+.logo-opencollective {
+  &:before {
+    content: $logo-opencollective;     
+    color: #7fadf2;
+  }
+}
+.logo-openid {
+  &:before {
+    content: $logo-openid;     
+    color: #f78c40;
+  }
+}
+.logo-opensourceinitiative {
+  &:before {
+    content: $logo-opensourceinitiative;     
+    color: #3da639;
+  }
+}
+.logo-openssl {
+  &:before {
+    content: $logo-openssl;     
+    color: #721412;
+  }
+}
+.logo-openstreetmap {
+  &:before {
+    content: $logo-openstreetmap;     
+    color: #7ebc6f;
+  }
+}
+.logo-opensuse {
+  &:before {
+    content: $logo-opensuse;     
+    color: #73ba25;
+  }
+}
+.logo-openvpn {
+  &:before {
+    content: $logo-openvpn;     
+    color: #ea7e20;
+  }
+}
+.logo-opera {
+  &:before {
+    content: $logo-opera;     
+    color: #ff1b2d;
+  }
+}
+.logo-opsgenie {
+  &:before {
+    content: $logo-opsgenie; 
+  }
+}
+.logo-oracle {
+  &:before {
+    content: $logo-oracle;     
+    color: #f80000;
+  }
+}
+.logo-orcid {
+  &:before {
+    content: $logo-orcid;     
+    color: #a6ce39;
+  }
+}
+.logo-origin {
+  &:before {
+    content: $logo-origin;     
+    color: #f56c2d;
+  }
+}
+.logo-osmc {
+  &:before {
+    content: $logo-osmc; 
+  }
+}
+.logo-overcast {
+  &:before {
+    content: $logo-overcast;     
+    color: #fc7e0f;
+  }
+}
+.logo-overleaf {
+  &:before {
+    content: $logo-overleaf;     
+    color: #47a141;
+  }
+}
+.logo-ovh {
+  &:before {
+    content: $logo-ovh;     
+    color: #123f6d;
+  }
+}
+.logo-pagekit {
+  &:before {
+    content: $logo-pagekit; 
+  }
+}
+.logo-palantir {
+  &:before {
+    content: $logo-palantir; 
+  }
+}
+.logo-paloaltosoftware {
+  &:before {
+    content: $logo-paloaltosoftware;     
+    color: #83da77;
+  }
+}
+.logo-pandora {
+  &:before {
+    content: $logo-pandora;     
+    color: #005483;
+  }
+}
+.logo-pantheon {
+  &:before {
+    content: $logo-pantheon;     
+    color: #efd01b;
+  }
+}
+.logo-parse-dot-ly {
+  &:before {
+    content: $logo-parse-dot-ly;     
+    color: #5ba745;
+  }
+}
+.logo-pastebin {
+  &:before {
+    content: $logo-pastebin;     
+    color: #02456c;
+  }
+}
+.logo-patreon {
+  &:before {
+    content: $logo-patreon;     
+    color: #f96854;
+  }
+}
+.logo-paypal {
+  &:before {
+    content: $logo-paypal;     
+    color: #00457c;
+  }
+}
+.logo-peertube {
+  &:before {
+    content: $logo-peertube;     
+    color: #f1680d;
+  }
+}
+.logo-periscope {
+  &:before {
+    content: $logo-periscope;     
+    color: #40a4c4;
+  }
+}
+.logo-php {
+  &:before {
+    content: $logo-php;     
+    color: #777bb4;
+  }
+}
+.logo-pi-hole {
+  &:before {
+    content: $logo-pi-hole;     
+    color: #f60d1a;
+  }
+}
+.logo-picarto-dot-tv {
+  &:before {
+    content: $logo-picarto-dot-tv;     
+    color: #1da456;
+  }
+}
+.logo-pinboard {
+  &:before {
+    content: $logo-pinboard;     
+    color: #00f;
+  }
+}
+.logo-pingdom {
+  &:before {
+    content: $logo-pingdom;     
+    color: #fff000;
+  }
+}
+.logo-pingup {
+  &:before {
+    content: $logo-pingup;     
+    color: #00b1ab;
+  }
+}
+.logo-pinterest {
+  &:before {
+    content: $logo-pinterest;     
+    color: #bd081c;
+  }
+}
+.logo-pivotaltracker {
+  &:before {
+    content: $logo-pivotaltracker;     
+    color: #517a9e;
+  }
+}
+.logo-pjsip {
+  &:before {
+    content: $logo-pjsip;     
+    color: #f86001;
+  }
+}
+.logo-plangrid {
+  &:before {
+    content: $logo-plangrid;     
+    color: #0085de;
+  }
+}
+.logo-player-dot-me {
+  &:before {
+    content: $logo-player-dot-me;     
+    color: #c0379a;
+  }
+}
+.logo-playerfm {
+  &:before {
+    content: $logo-playerfm;     
+    color: #c8122a;
+  }
+}
+.logo-playstation {
+  &:before {
+    content: $logo-playstation;     
+    color: #003791;
+  }
+}
+.logo-playstation3 {
+  &:before {
+    content: $logo-playstation3;     
+    color: #003791;
+  }
+}
+.logo-playstation4 {
+  &:before {
+    content: $logo-playstation4;     
+    color: #003791;
+  }
+}
+.logo-plesk {
+  &:before {
+    content: $logo-plesk;     
+    color: #52bbe6;
+  }
+}
+.logo-plex {
+  &:before {
+    content: $logo-plex;     
+    color: #e5a00d;
+  }
+}
+.logo-pluralsight {
+  &:before {
+    content: $logo-pluralsight;     
+    color: #f15b2a;
+  }
+}
+.logo-plurk {
+  &:before {
+    content: $logo-plurk;     
+    color: #ff574d;
+  }
+}
+.logo-pocket {
+  &:before {
+    content: $logo-pocket;     
+    color: #ef3f56;
+  }
+}
+.logo-pocketcasts {
+  &:before {
+    content: $logo-pocketcasts;     
+    color: #f43e37;
+  }
+}
+.logo-postgresql {
+  &:before {
+    content: $logo-postgresql;     
+    color: #336791;
+  }
+}
+.logo-postman {
+  &:before {
+    content: $logo-postman;     
+    color: #ff6c37;
+  }
+}
+.logo-postwoman {
+  &:before {
+    content: $logo-postwoman;     
+    color: #50fa7b;
+  }
+}
+.logo-powershell {
+  &:before {
+    content: $logo-powershell;     
+    color: #5391fe;
+  }
+}
+.logo-prestashop {
+  &:before {
+    content: $logo-prestashop;     
+    color: #df0067;
+  }
+}
+.logo-prettier {
+  &:before {
+    content: $logo-prettier;     
+    color: #f7b93e;
+  }
+}
+.logo-prismic {
+  &:before {
+    content: $logo-prismic;     
+    color: #484a7a;
+  }
+}
+.logo-probot {
+  &:before {
+    content: $logo-probot;     
+    color: #00b0d8;
+  }
+}
+.logo-processwire {
+  &:before {
+    content: $logo-processwire;     
+    color: #ef145f;
+  }
+}
+.logo-producthunt {
+  &:before {
+    content: $logo-producthunt;     
+    color: #da552f;
+  }
+}
+.logo-prometheus {
+  &:before {
+    content: $logo-prometheus;     
+    color: #e6522c;
+  }
+}
+.logo-proto-dot-io {
+  &:before {
+    content: $logo-proto-dot-io;     
+    color: #34a7c1;
+  }
+}
+.logo-protonmail {
+  &:before {
+    content: $logo-protonmail;     
+    color: #8b89cc;
+  }
+}
+.logo-proxmox {
+  &:before {
+    content: $logo-proxmox;     
+    color: #e57000;
+  }
+}
+.logo-publons {
+  &:before {
+    content: $logo-publons;     
+    color: #369;
+  }
+}
+.logo-purescript {
+  &:before {
+    content: $logo-purescript; 
+  }
+}
+.logo-pypi {
+  &:before {
+    content: $logo-pypi;     
+    color: #3775a9;
+  }
+}
+.logo-python {
+  &:before {
+    content: $logo-python;     
+    color: #3776ab;
+  }
+}
+.logo-pytorch {
+  &:before {
+    content: $logo-pytorch;     
+    color: #ee4c2c;
+  }
+}
+.logo-pyup {
+  &:before {
+    content: $logo-pyup;     
+    color: #9f55ff;
+  }
+}
+.logo-qemu {
+  &:before {
+    content: $logo-qemu;     
+    color: #f60;
+  }
+}
+.logo-qgis {
+  &:before {
+    content: $logo-qgis;     
+    color: #589632;
+  }
+}
+.logo-qiita {
+  &:before {
+    content: $logo-qiita;     
+    color: #55c500;
+  }
+}
+.logo-qualcomm {
+  &:before {
+    content: $logo-qualcomm;     
+    color: #3253dc;
+  }
+}
+.logo-quantcast {
+  &:before {
+    content: $logo-quantcast; 
+  }
+}
+.logo-quantopian {
+  &:before {
+    content: $logo-quantopian;     
+    color: #c50000;
+  }
+}
+.logo-quarkus {
+  &:before {
+    content: $logo-quarkus;     
+    color: #4695eb;
+  }
+}
+.logo-quicktime {
+  &:before {
+    content: $logo-quicktime;     
+    color: #1c69f0;
+  }
+}
+.logo-quip {
+  &:before {
+    content: $logo-quip;     
+    color: #f27557;
+  }
+}
+.logo-quora {
+  &:before {
+    content: $logo-quora;     
+    color: #b92b27;
+  }
+}
+.logo-qwiklabs {
+  &:before {
+    content: $logo-qwiklabs;     
+    color: #f5cd0e;
+  }
+}
+.logo-qzone {
+  &:before {
+    content: $logo-qzone;     
+    color: #fece00;
+  }
+}
+.logo-r {
+  &:before {
+    content: $logo-r;     
+    color: #276dc3;
+  }
+}
+.logo-rabbitmq {
+  &:before {
+    content: $logo-rabbitmq;     
+    color: #f60;
+  }
+}
+.logo-radiopublic {
+  &:before {
+    content: $logo-radiopublic;     
+    color: #ce262f;
+  }
+}
+.logo-rails {
+  &:before {
+    content: $logo-rails;     
+    color: #c00;
+  }
+}
+.logo-raspberrypi {
+  &:before {
+    content: $logo-raspberrypi;     
+    color: #c51a4a;
+  }
+}
+.logo-react {
+  &:before {
+    content: $logo-react;     
+    color: #61dafb;
+  }
+}
+.logo-reactos {
+  &:before {
+    content: $logo-reactos;     
+    color: #08c;
+  }
+}
+.logo-reactrouter {
+  &:before {
+    content: $logo-reactrouter;     
+    color: #ca4245;
+  }
+}
+.logo-readthedocs {
+  &:before {
+    content: $logo-readthedocs;     
+    color: #8ca1af;
+  }
+}
+.logo-realm {
+  &:before {
+    content: $logo-realm;     
+    color: #39477f;
+  }
+}
+.logo-reason {
+  &:before {
+    content: $logo-reason;     
+    color: #dd4b39;
+  }
+}
+.logo-reasonstudios {
+  &:before {
+    content: $logo-reasonstudios;     
+    color: #fff;
+  }
+}
+.logo-redbubble {
+  &:before {
+    content: $logo-redbubble;     
+    color: #e41321;
+  }
+}
+.logo-reddit {
+  &:before {
+    content: $logo-reddit;     
+    color: #ff4500;
+  }
+}
+.logo-redhat {
+  &:before {
+    content: $logo-redhat;     
+    color: #e00;
+  }
+}
+.logo-redis {
+  &:before {
+    content: $logo-redis;     
+    color: #d82c20;
+  }
+}
+.logo-redux {
+  &:before {
+    content: $logo-redux;     
+    color: #764abc;
+  }
+}
+.logo-renren {
+  &:before {
+    content: $logo-renren;     
+    color: #217dc6;
+  }
+}
+.logo-repl-dot-it {
+  &:before {
+    content: $logo-repl-dot-it;     
+    color: #667881;
+  }
+}
+.logo-researchgate {
+  &:before {
+    content: $logo-researchgate;     
+    color: #0cb;
+  }
+}
+.logo-reverbnation {
+  &:before {
+    content: $logo-reverbnation;     
+    color: #e43526;
+  }
+}
+.logo-riot {
+  &:before {
+    content: $logo-riot;     
+    color: #368bd6;
+  }
+}
+.logo-ripple {
+  &:before {
+    content: $logo-ripple;     
+    color: #0085c0;
+  }
+}
+.logo-riseup {
+  &:before {
+    content: $logo-riseup;     
+    color: #5e9ee3;
+  }
+}
+.logo-rollup-dot-js {
+  &:before {
+    content: $logo-rollup-dot-js;     
+    color: #ec4a3f;
+  }
+}
+.logo-roots {
+  &:before {
+    content: $logo-roots;     
+    color: #525ddc;
+  }
+}
+.logo-roundcube {
+  &:before {
+    content: $logo-roundcube;     
+    color: #37beff;
+  }
+}
+.logo-rss {
+  &:before {
+    content: $logo-rss;     
+    color: #ffa500;
+  }
+}
+.logo-rstudio {
+  &:before {
+    content: $logo-rstudio;     
+    color: #75aadb;
+  }
+}
+.logo-ruby {
+  &:before {
+    content: $logo-ruby;     
+    color: #cc342d;
+  }
+}
+.logo-rubygems {
+  &:before {
+    content: $logo-rubygems;     
+    color: #e9573f;
+  }
+}
+.logo-runkeeper {
+  &:before {
+    content: $logo-runkeeper;     
+    color: #2dc9d7;
+  }
+}
+.logo-rust {
+  &:before {
+    content: $logo-rust; 
+  }
+}
+.logo-safari {
+  &:before {
+    content: $logo-safari; 
+  }
+}
+.logo-sahibinden {
+  &:before {
+    content: $logo-sahibinden;     
+    color: #ffe800;
+  }
+}
+.logo-salesforce {
+  &:before {
+    content: $logo-salesforce;     
+    color: #00a1e0;
+  }
+}
+.logo-saltstack {
+  &:before {
+    content: $logo-saltstack;     
+    color: #00eace;
+  }
+}
+.logo-samsung {
+  &:before {
+    content: $logo-samsung;     
+    color: #1428a0;
+  }
+}
+.logo-samsungpay {
+  &:before {
+    content: $logo-samsungpay;     
+    color: #1428a0;
+  }
+}
+.logo-sap {
+  &:before {
+    content: $logo-sap;     
+    color: #008fd3;
+  }
+}
+.logo-sass {
+  &:before {
+    content: $logo-sass;     
+    color: #c69;
+  }
+}
+.logo-saucelabs {
+  &:before {
+    content: $logo-saucelabs;     
+    color: #e2231a;
+  }
+}
+.logo-scala {
+  &:before {
+    content: $logo-scala;     
+    color: #dc322f;
+  }
+}
+.logo-scaleway {
+  &:before {
+    content: $logo-scaleway;     
+    color: #4f0599;
+  }
+}
+.logo-scribd {
+  &:before {
+    content: $logo-scribd;     
+    color: #1a7bba;
+  }
+}
+.logo-scrutinizerci {
+  &:before {
+    content: $logo-scrutinizerci;     
+    color: #8a9296;
+  }
+}
+.logo-seagate {
+  &:before {
+    content: $logo-seagate;     
+    color: #72be4f;
+  }
+}
+.logo-sega {
+  &:before {
+    content: $logo-sega;     
+    color: #0089cf;
+  }
+}
+.logo-sellfy {
+  &:before {
+    content: $logo-sellfy;     
+    color: #21b352;
+  }
+}
+.logo-semaphoreci {
+  &:before {
+    content: $logo-semaphoreci;     
+    color: #19a974;
+  }
+}
+.logo-sensu {
+  &:before {
+    content: $logo-sensu;     
+    color: #89c967;
+  }
+}
+.logo-sentry {
+  &:before {
+    content: $logo-sentry;     
+    color: #fb4226;
+  }
+}
+.logo-serverfault {
+  &:before {
+    content: $logo-serverfault;     
+    color: #e7282d;
+  }
+}
+.logo-shazam {
+  &:before {
+    content: $logo-shazam;     
+    color: #08f;
+  }
+}
+.logo-shell {
+  &:before {
+    content: $logo-shell;     
+    color: #ffd500;
+  }
+}
+.logo-shopify {
+  &:before {
+    content: $logo-shopify;     
+    color: #7ab55c;
+  }
+}
+.logo-showpad {
+  &:before {
+    content: $logo-showpad;     
+    color: #2d2e83;
+  }
+}
+.logo-siemens {
+  &:before {
+    content: $logo-siemens;     
+    color: #099;
+  }
+}
+.logo-signal {
+  &:before {
+    content: $logo-signal;     
+    color: #2592e9;
+  }
+}
+.logo-simpleicons {
+  &:before {
+    content: $logo-simpleicons; 
+  }
+}
+.logo-sinaweibo {
+  &:before {
+    content: $logo-sinaweibo;     
+    color: #e6162d;
+  }
+}
+.logo-sitepoint {
+  &:before {
+    content: $logo-sitepoint;     
+    color: #258aaf;
+  }
+}
+.logo-sketch {
+  &:before {
+    content: $logo-sketch;     
+    color: #f7b500;
+  }
+}
+.logo-skillshare {
+  &:before {
+    content: $logo-skillshare;     
+    color: #17c5cb;
+  }
+}
+.logo-skyliner {
+  &:before {
+    content: $logo-skyliner;     
+    color: #2fcea0;
+  }
+}
+.logo-skype {
+  &:before {
+    content: $logo-skype;     
+    color: #00aff0;
+  }
+}
+.logo-slack {
+  &:before {
+    content: $logo-slack;     
+    color: #4a154b;
+  }
+}
+.logo-slashdot {
+  &:before {
+    content: $logo-slashdot;     
+    color: #026664;
+  }
+}
+.logo-slickpic {
+  &:before {
+    content: $logo-slickpic;     
+    color: #ff880f;
+  }
+}
+.logo-slides {
+  &:before {
+    content: $logo-slides;     
+    color: #e4637c;
+  }
+}
+.logo-smashingmagazine {
+  &:before {
+    content: $logo-smashingmagazine;     
+    color: #e85c33;
+  }
+}
+.logo-smugmug {
+  &:before {
+    content: $logo-smugmug;     
+    color: #6db944;
+  }
+}
+.logo-snapchat {
+  &:before {
+    content: $logo-snapchat;     
+    color: #fffc00;
+  }
+}
+.logo-snapcraft {
+  &:before {
+    content: $logo-snapcraft;     
+    color: #82bea0;
+  }
+}
+.logo-snyk {
+  &:before {
+    content: $logo-snyk;     
+    color: #4c4a73;
+  }
+}
+.logo-society6 {
+  &:before {
+    content: $logo-society6; 
+  }
+}
+.logo-socket-dot-io {
+  &:before {
+    content: $logo-socket-dot-io; 
+  }
+}
+.logo-sogou {
+  &:before {
+    content: $logo-sogou;     
+    color: #fb6022;
+  }
+}
+.logo-solus {
+  &:before {
+    content: $logo-solus;     
+    color: #5294e2;
+  }
+}
+.logo-sonarcloud {
+  &:before {
+    content: $logo-sonarcloud;     
+    color: #f3702a;
+  }
+}
+.logo-sonarlint {
+  &:before {
+    content: $logo-sonarlint;     
+    color: #cc2026;
+  }
+}
+.logo-sonarqube {
+  &:before {
+    content: $logo-sonarqube;     
+    color: #4e9bcd;
+  }
+}
+.logo-sonarsource {
+  &:before {
+    content: $logo-sonarsource;     
+    color: #cb3032;
+  }
+}
+.logo-songkick {
+  &:before {
+    content: $logo-songkick;     
+    color: #f80046;
+  }
+}
+.logo-sonicwall {
+  &:before {
+    content: $logo-sonicwall;     
+    color: #f60;
+  }
+}
+.logo-sonos {
+  &:before {
+    content: $logo-sonos; 
+  }
+}
+.logo-soundcloud {
+  &:before {
+    content: $logo-soundcloud;     
+    color: #f30;
+  }
+}
+.logo-sourceengine {
+  &:before {
+    content: $logo-sourceengine;     
+    color: #f79a10;
+  }
+}
+.logo-sourceforge {
+  &:before {
+    content: $logo-sourceforge;     
+    color: #535353;
+  }
+}
+.logo-sourcegraph {
+  &:before {
+    content: $logo-sourcegraph;     
+    color: #00b4f2;
+  }
+}
+.logo-spacemacs {
+  &:before {
+    content: $logo-spacemacs;     
+    color: #9266cc;
+  }
+}
+.logo-spacex {
+  &:before {
+    content: $logo-spacex;     
+    color: #005288;
+  }
+}
+.logo-sparkfun {
+  &:before {
+    content: $logo-sparkfun;     
+    color: #e53525;
+  }
+}
+.logo-sparkpost {
+  &:before {
+    content: $logo-sparkpost;     
+    color: #fa6423;
+  }
+}
+.logo-spdx {
+  &:before {
+    content: $logo-spdx;     
+    color: #4398cc;
+  }
+}
+.logo-speakerdeck {
+  &:before {
+    content: $logo-speakerdeck;     
+    color: #396;
+  }
+}
+.logo-spectrum {
+  &:before {
+    content: $logo-spectrum;     
+    color: #7b16ff;
+  }
+}
+.logo-spotify {
+  &:before {
+    content: $logo-spotify;     
+    color: #1ed760;
+  }
+}
+.logo-spotlight {
+  &:before {
+    content: $logo-spotlight;     
+    color: #352a71;
+  }
+}
+.logo-spreaker {
+  &:before {
+    content: $logo-spreaker;     
+    color: #f5c300;
+  }
+}
+.logo-spring {
+  &:before {
+    content: $logo-spring;     
+    color: #6db33f;
+  }
+}
+.logo-sprint {
+  &:before {
+    content: $logo-sprint;     
+    color: #ffce0a;
+  }
+}
+.logo-square {
+  &:before {
+    content: $logo-square; 
+  }
+}
+.logo-squarespace {
+  &:before {
+    content: $logo-squarespace; 
+  }
+}
+.logo-stackbit {
+  &:before {
+    content: $logo-stackbit;     
+    color: #3eb0fd;
+  }
+}
+.logo-stackexchange {
+  &:before {
+    content: $logo-stackexchange;     
+    color: #1e5397;
+  }
+}
+.logo-stackoverflow {
+  &:before {
+    content: $logo-stackoverflow;     
+    color: #fe7a16;
+  }
+}
+.logo-stackpath {
+  &:before {
+    content: $logo-stackpath; 
+  }
+}
+.logo-stackshare {
+  &:before {
+    content: $logo-stackshare;     
+    color: #0690fa;
+  }
+}
+.logo-stadia {
+  &:before {
+    content: $logo-stadia;     
+    color: #cd2640;
+  }
+}
+.logo-statamic {
+  &:before {
+    content: $logo-statamic; 
+  }
+}
+.logo-staticman {
+  &:before {
+    content: $logo-staticman; 
+  }
+}
+.logo-statuspage {
+  &:before {
+    content: $logo-statuspage; 
+  }
+}
+.logo-steam {
+  &:before {
+    content: $logo-steam; 
+  }
+}
+.logo-steamworks {
+  &:before {
+    content: $logo-steamworks; 
+  }
+}
+.logo-steem {
+  &:before {
+    content: $logo-steem;     
+    color: #4ba2f2;
+  }
+}
+.logo-steemit {
+  &:before {
+    content: $logo-steemit;     
+    color: #06d6a9;
+  }
+}
+.logo-steinberg {
+  &:before {
+    content: $logo-steinberg;     
+    color: #c90827;
+  }
+}
+.logo-stencyl {
+  &:before {
+    content: $logo-stencyl;     
+    color: #8e1c04;
+  }
+}
+.logo-stitcher {
+  &:before {
+    content: $logo-stitcher; 
+  }
+}
+.logo-storify {
+  &:before {
+    content: $logo-storify;     
+    color: #3a98d9;
+  }
+}
+.logo-storybook {
+  &:before {
+    content: $logo-storybook;     
+    color: #ff4785;
+  }
+}
+.logo-strapi {
+  &:before {
+    content: $logo-strapi;     
+    color: #2e7eea;
+  }
+}
+.logo-strava {
+  &:before {
+    content: $logo-strava;     
+    color: #fc4c02;
+  }
+}
+.logo-stripe {
+  &:before {
+    content: $logo-stripe;     
+    color: #008cdd;
+  }
+}
+.logo-strongswan {
+  &:before {
+    content: $logo-strongswan;     
+    color: #e00033;
+  }
+}
+.logo-stubhub {
+  &:before {
+    content: $logo-stubhub;     
+    color: #003168;
+  }
+}
+.logo-styled-components {
+  &:before {
+    content: $logo-styled-components;     
+    color: #db7093;
+  }
+}
+.logo-styleshare {
+  &:before {
+    content: $logo-styleshare; 
+  }
+}
+.logo-stylus {
+  &:before {
+    content: $logo-stylus; 
+  }
+}
+.logo-sublimetext {
+  &:before {
+    content: $logo-sublimetext;     
+    color: #ff9800;
+  }
+}
+.logo-subversion {
+  &:before {
+    content: $logo-subversion;     
+    color: #809cc9;
+  }
+}
+.logo-superuser {
+  &:before {
+    content: $logo-superuser;     
+    color: #2eace3;
+  }
+}
+.logo-svelte {
+  &:before {
+    content: $logo-svelte;     
+    color: #ff3e00;
+  }
+}
+.logo-svg {
+  &:before {
+    content: $logo-svg;     
+    color: #ffb13b;
+  }
+}
+.logo-svgo {
+  &:before {
+    content: $logo-svgo;     
+    color: #14b9ff;
+  }
+}
+.logo-swagger {
+  &:before {
+    content: $logo-swagger;     
+    color: #85ea2d;
+  }
+}
+.logo-swarm {
+  &:before {
+    content: $logo-swarm;     
+    color: #ffa633;
+  }
+}
+.logo-swift {
+  &:before {
+    content: $logo-swift;     
+    color: #fa7343;
+  }
+}
+.logo-symantec {
+  &:before {
+    content: $logo-symantec;     
+    color: #fdb511;
+  }
+}
+.logo-symfony {
+  &:before {
+    content: $logo-symfony; 
+  }
+}
+.logo-synology {
+  &:before {
+    content: $logo-synology;     
+    color: #b6b5b6;
+  }
+}
+.logo-t-mobile {
+  &:before {
+    content: $logo-t-mobile;     
+    color: #e20074;
+  }
+}
+.logo-tableau {
+  &:before {
+    content: $logo-tableau;     
+    color: #e97627;
+  }
+}
+.logo-tails {
+  &:before {
+    content: $logo-tails;     
+    color: #56347c;
+  }
+}
+.logo-tailwindcss {
+  &:before {
+    content: $logo-tailwindcss;     
+    color: #38b2ac;
+  }
+}
+.logo-tapas {
+  &:before {
+    content: $logo-tapas;     
+    color: #ffce00;
+  }
+}
+.logo-teamviewer {
+  &:before {
+    content: $logo-teamviewer;     
+    color: #0e8ee9;
+  }
+}
+.logo-ted {
+  &:before {
+    content: $logo-ted;     
+    color: #e62b1e;
+  }
+}
+.logo-teespring {
+  &:before {
+    content: $logo-teespring;     
+    color: #39ace6;
+  }
+}
+.logo-telegram {
+  &:before {
+    content: $logo-telegram;     
+    color: #2ca5e0;
+  }
+}
+.logo-tencentqq {
+  &:before {
+    content: $logo-tencentqq;     
+    color: #eb1923;
+  }
+}
+.logo-tencentweibo {
+  &:before {
+    content: $logo-tencentweibo;     
+    color: #20b8e5;
+  }
+}
+.logo-tensorflow {
+  &:before {
+    content: $logo-tensorflow;     
+    color: #ff6f00;
+  }
+}
+.logo-teradata {
+  &:before {
+    content: $logo-teradata;     
+    color: #f37440;
+  }
+}
+.logo-terraform {
+  &:before {
+    content: $logo-terraform;     
+    color: #623ce4;
+  }
+}
+.logo-tesla {
+  &:before {
+    content: $logo-tesla;     
+    color: #c00;
+  }
+}
+.logo-themighty {
+  &:before {
+    content: $logo-themighty;     
+    color: #d0072a;
+  }
+}
+.logo-themoviedatabase {
+  &:before {
+    content: $logo-themoviedatabase;     
+    color: #01d277;
+  }
+}
+.logo-tidal {
+  &:before {
+    content: $logo-tidal; 
+  }
+}
+.logo-tiktok {
+  &:before {
+    content: $logo-tiktok; 
+  }
+}
+.logo-timescale {
+  &:before {
+    content: $logo-timescale;     
+    color: #fdb515;
+  }
+}
+.logo-tinder {
+  &:before {
+    content: $logo-tinder;     
+    color: #ff6b6b;
+  }
+}
+.logo-todoist {
+  &:before {
+    content: $logo-todoist;     
+    color: #e44332;
+  }
+}
+.logo-toggl {
+  &:before {
+    content: $logo-toggl;     
+    color: #e01b22;
+  }
+}
+.logo-topcoder {
+  &:before {
+    content: $logo-topcoder;     
+    color: #29a8e0;
+  }
+}
+.logo-toptal {
+  &:before {
+    content: $logo-toptal;     
+    color: #3863a0;
+  }
+}
+.logo-tor {
+  &:before {
+    content: $logo-tor;     
+    color: #7e4798;
+  }
+}
+.logo-toshiba {
+  &:before {
+    content: $logo-toshiba;     
+    color: #f00;
+  }
+}
+.logo-trainerroad {
+  &:before {
+    content: $logo-trainerroad;     
+    color: #e12726;
+  }
+}
+.logo-trakt {
+  &:before {
+    content: $logo-trakt;     
+    color: #ed1c24;
+  }
+}
+.logo-travisci {
+  &:before {
+    content: $logo-travisci;     
+    color: #3eaaaf;
+  }
+}
+.logo-treehouse {
+  &:before {
+    content: $logo-treehouse;     
+    color: #5fcf80;
+  }
+}
+.logo-trello {
+  &:before {
+    content: $logo-trello;     
+    color: #0079bf;
+  }
+}
+.logo-trendmicro {
+  &:before {
+    content: $logo-trendmicro;     
+    color: #d71921;
+  }
+}
+.logo-tripadvisor1 {
+  &:before {
+    content: $logo-tripadvisor1;     
+    color: #00af87;
+  }
+}
+.logo-trulia {
+  &:before {
+    content: $logo-trulia;     
+    color: #53b50a;
+  }
+}
+.logo-trustpilot {
+  &:before {
+    content: $logo-trustpilot;     
+    color: #00b67a;
+  }
+}
+.logo-tumblr {
+  &:before {
+    content: $logo-tumblr;     
+    color: #36465d;
+  }
+}
+.logo-turkishairlines {
+  &:before {
+    content: $logo-turkishairlines;     
+    color: #c70a0c;
+  }
+}
+.logo-twilio {
+  &:before {
+    content: $logo-twilio;     
+    color: #f22f46;
+  }
+}
+.logo-twitch {
+  &:before {
+    content: $logo-twitch;     
+    color: #6441a4;
+  }
+}
+.logo-twitter {
+  &:before {
+    content: $logo-twitter;     
+    color: #1da1f2;
+  }
+}
+.logo-twoo {
+  &:before {
+    content: $logo-twoo;     
+    color: #ff7102;
+  }
+}
+.logo-typescript {
+  &:before {
+    content: $logo-typescript;     
+    color: #007acc;
+  }
+}
+.logo-typo3 {
+  &:before {
+    content: $logo-typo3;     
+    color: #ff8700;
+  }
+}
+.logo-uber {
+  &:before {
+    content: $logo-uber; 
+  }
+}
+.logo-ubereats {
+  &:before {
+    content: $logo-ubereats;     
+    color: #5fb709;
+  }
+}
+.logo-ubisoft {
+  &:before {
+    content: $logo-ubisoft; 
+  }
+}
+.logo-ublockorigin {
+  &:before {
+    content: $logo-ublockorigin;     
+    color: #800000;
+  }
+}
+.logo-ubuntu {
+  &:before {
+    content: $logo-ubuntu;     
+    color: #e95420;
+  }
+}
+.logo-udacity {
+  &:before {
+    content: $logo-udacity;     
+    color: #01b3e3;
+  }
+}
+.logo-udemy {
+  &:before {
+    content: $logo-udemy;     
+    color: #ec5252;
+  }
+}
+.logo-uikit {
+  &:before {
+    content: $logo-uikit;     
+    color: #2396f3;
+  }
+}
+.logo-umbraco {
+  &:before {
+    content: $logo-umbraco;     
+    color: #00bec1;
+  }
+}
+.logo-unity {
+  &:before {
+    content: $logo-unity; 
+  }
+}
+.logo-unrealengine {
+  &:before {
+    content: $logo-unrealengine; 
+  }
+}
+.logo-unsplash {
+  &:before {
+    content: $logo-unsplash; 
+  }
+}
+.logo-untappd {
+  &:before {
+    content: $logo-untappd;     
+    color: #ffc000;
+  }
+}
+.logo-upwork {
+  &:before {
+    content: $logo-upwork;     
+    color: #6fda44;
+  }
+}
+.logo-v {
+  &:before {
+    content: $logo-v;     
+    color: #5d87bf;
+  }
+}
+.logo-v8 {
+  &:before {
+    content: $logo-v8;     
+    color: #4b8bf5;
+  }
+}
+.logo-vagrant {
+  &:before {
+    content: $logo-vagrant;     
+    color: #1563ff;
+  }
+}
+.logo-valve {
+  &:before {
+    content: $logo-valve;     
+    color: #f74843;
+  }
+}
+.logo-veeam {
+  &:before {
+    content: $logo-veeam;     
+    color: #00b336;
+  }
+}
+.logo-venmo {
+  &:before {
+    content: $logo-venmo;     
+    color: #3d95ce;
+  }
+}
+.logo-verizon {
+  &:before {
+    content: $logo-verizon;     
+    color: #cd040b;
+  }
+}
+.logo-viadeo {
+  &:before {
+    content: $logo-viadeo;     
+    color: #f88d2d;
+  }
+}
+.logo-viber {
+  &:before {
+    content: $logo-viber;     
+    color: #665cac;
+  }
+}
+.logo-vim {
+  &:before {
+    content: $logo-vim;     
+    color: #019733;
+  }
+}
+.logo-vimeo {
+  &:before {
+    content: $logo-vimeo;     
+    color: #1ab7ea;
+  }
+}
+.logo-vine {
+  &:before {
+    content: $logo-vine;     
+    color: #11b48a;
+  }
+}
+.logo-virb {
+  &:before {
+    content: $logo-virb;     
+    color: #0093da;
+  }
+}
+.logo-visa1 {
+  &:before {
+    content: $logo-visa1;     
+    color: #142787;
+  }
+}
+.logo-visualstudio {
+  &:before {
+    content: $logo-visualstudio;     
+    color: #5c2d91;
+  }
+}
+.logo-visualstudiocode {
+  &:before {
+    content: $logo-visualstudiocode;     
+    color: #007acc;
+  }
+}
+.logo-vk {
+  &:before {
+    content: $logo-vk;     
+    color: #4680c2;
+  }
+}
+.logo-vlcmediaplayer {
+  &:before {
+    content: $logo-vlcmediaplayer;     
+    color: #f80;
+  }
+}
+.logo-vodafone {
+  &:before {
+    content: $logo-vodafone;     
+    color: #e60000;
+  }
+}
+.logo-volkswagen {
+  &:before {
+    content: $logo-volkswagen;     
+    color: #151f5d;
+  }
+}
+.logo-vsco {
+  &:before {
+    content: $logo-vsco; 
+  }
+}
+.logo-vue-dot-js {
+  &:before {
+    content: $logo-vue-dot-js;     
+    color: #4fc08d;
+  }
+}
+.logo-w3c {
+  &:before {
+    content: $logo-w3c;     
+    color: #005a9c;
+  }
+}
+.logo-wattpad {
+  &:before {
+    content: $logo-wattpad;     
+    color: #f68d12;
+  }
+}
+.logo-waze {
+  &:before {
+    content: $logo-waze;     
+    color: #333665;
+  }
+}
+.logo-weasyl {
+  &:before {
+    content: $logo-weasyl;     
+    color: #900;
+  }
+}
+.logo-webauthn {
+  &:before {
+    content: $logo-webauthn;     
+    color: #3423a6;
+  }
+}
+.logo-webcomponents-dot-org {
+  &:before {
+    content: $logo-webcomponents-dot-org;     
+    color: #29abe2;
+  }
+}
+.logo-webmin {
+  &:before {
+    content: $logo-webmin;     
+    color: #7da0d0;
+  }
+}
+.logo-webpack {
+  &:before {
+    content: $logo-webpack;     
+    color: #8dd6f9;
+  }
+}
+.logo-webstorm {
+  &:before {
+    content: $logo-webstorm; 
+  }
+}
+.logo-wechat {
+  &:before {
+    content: $logo-wechat;     
+    color: #7bb32e;
+  }
+}
+.logo-whatsapp {
+  &:before {
+    content: $logo-whatsapp;     
+    color: #25d366;
+  }
+}
+.logo-wheniwork {
+  &:before {
+    content: $logo-wheniwork;     
+    color: #51a33d;
+  }
+}
+.logo-whitesource {
+  &:before {
+    content: $logo-whitesource;     
+    color: #161d4e;
+  }
+}
+.logo-wii {
+  &:before {
+    content: $logo-wii;     
+    color: #8b8b8b;
+  }
+}
+.logo-wiiu {
+  &:before {
+    content: $logo-wiiu;     
+    color: #8b8b8b;
+  }
+}
+.logo-wikipedia {
+  &:before {
+    content: $logo-wikipedia; 
+  }
+}
+.logo-windows {
+  &:before {
+    content: $logo-windows;     
+    color: #0078d6;
+  }
+}
+.logo-wire {
+  &:before {
+    content: $logo-wire; 
+  }
+}
+.logo-wireguard {
+  &:before {
+    content: $logo-wireguard;     
+    color: #88171a;
+  }
+}
+.logo-wish {
+  &:before {
+    content: $logo-wish;     
+    color: #2fb7ec;
+  }
+}
+.logo-wix {
+  &:before {
+    content: $logo-wix;     
+    color: #faad4d;
+  }
+}
+.logo-wolfram {
+  &:before {
+    content: $logo-wolfram;     
+    color: #d10;
+  }
+}
+.logo-wolframlanguage {
+  &:before {
+    content: $logo-wolframlanguage;     
+    color: #d10;
+  }
+}
+.logo-wolframmathematica {
+  &:before {
+    content: $logo-wolframmathematica;     
+    color: #d10;
+  }
+}
+.logo-wordpress {
+  &:before {
+    content: $logo-wordpress;     
+    color: #21759b;
+  }
+}
+.logo-workplace {
+  &:before {
+    content: $logo-workplace; 
+  }
+}
+.logo-wpengine {
+  &:before {
+    content: $logo-wpengine;     
+    color: #40bac8;
+  }
+}
+.logo-write-dot-as {
+  &:before {
+    content: $logo-write-dot-as;     
+    color: #5bc4ee;
+  }
+}
+.logo-x-dot-org {
+  &:before {
+    content: $logo-x-dot-org;     
+    color: #f28834;
+  }
+}
+.logo-x-pack {
+  &:before {
+    content: $logo-x-pack;     
+    color: #005571;
+  }
+}
+.logo-xamarin {
+  &:before {
+    content: $logo-xamarin;     
+    color: #4393d4;
+  }
+}
+.logo-xbox {
+  &:before {
+    content: $logo-xbox;     
+    color: #107c10;
+  }
+}
+.logo-xcode {
+  &:before {
+    content: $logo-xcode;     
+    color: #1575f9;
+  }
+}
+.logo-xdadevelopers {
+  &:before {
+    content: $logo-xdadevelopers;     
+    color: #f59812;
+  }
+}
+.logo-xero {
+  &:before {
+    content: $logo-xero;     
+    color: #13b5ea;
+  }
+}
+.logo-xfce {
+  &:before {
+    content: $logo-xfce;     
+    color: #2284f2;
+  }
+}
+.logo-xiaomi {
+  &:before {
+    content: $logo-xiaomi;     
+    color: #fa6709;
+  }
+}
+.logo-xing {
+  &:before {
+    content: $logo-xing;     
+    color: #006567;
+  }
+}
+.logo-xmpp {
+  &:before {
+    content: $logo-xmpp;     
+    color: #002b5c;
+  }
+}
+.logo-xrp {
+  &:before {
+    content: $logo-xrp;     
+    color: #25a768;
+  }
+}
+.logo-xsplit {
+  &:before {
+    content: $logo-xsplit;     
+    color: #0095de;
+  }
+}
+.logo-yahoo {
+  &:before {
+    content: $logo-yahoo;     
+    color: #6001d2;
+  }
+}
+.logo-yamahacorporation {
+  &:before {
+    content: $logo-yamahacorporation;     
+    color: #4b1e78;
+  }
+}
+.logo-yamahamotorcorporation {
+  &:before {
+    content: $logo-yamahamotorcorporation;     
+    color: #e60012;
+  }
+}
+.logo-yammer {
+  &:before {
+    content: $logo-yammer;     
+    color: #0072c6;
+  }
+}
+.logo-yandex {
+  &:before {
+    content: $logo-yandex;     
+    color: #f00;
+  }
+}
+.logo-yarn {
+  &:before {
+    content: $logo-yarn;     
+    color: #2c8ebb;
+  }
+}
+.logo-ycombinator {
+  &:before {
+    content: $logo-ycombinator;     
+    color: #f0652f;
+  }
+}
+.logo-yelp {
+  &:before {
+    content: $logo-yelp;     
+    color: #d32323;
+  }
+}
+.logo-youtube {
+  &:before {
+    content: $logo-youtube;     
+    color: #f00;
+  }
+}
+.logo-zalando {
+  &:before {
+    content: $logo-zalando;     
+    color: #ff6900;
+  }
+}
+.logo-zapier {
+  &:before {
+    content: $logo-zapier;     
+    color: #ff4a00;
+  }
+}
+.logo-zeit {
+  &:before {
+    content: $logo-zeit; 
+  }
+}
+.logo-zend {
+  &:before {
+    content: $logo-zend;     
+    color: #0679ea;
+  }
+}
+.logo-zendesk {
+  &:before {
+    content: $logo-zendesk; 
+  }
+}
+.logo-zendframework {
+  &:before {
+    content: $logo-zendframework;     
+    color: #68b604;
+  }
+}
+.logo-zeromq {
+  &:before {
+    content: $logo-zeromq;     
+    color: #df0000;
+  }
+}
+.logo-zerply {
+  &:before {
+    content: $logo-zerply;     
+    color: #9dbc7a;
+  }
+}
+.logo-zhihu {
+  &:before {
+    content: $logo-zhihu;     
+    color: #0084ff;
+  }
+}
+.logo-zillow {
+  &:before {
+    content: $logo-zillow;     
+    color: #0074e4;
+  }
+}
+.logo-zingat {
+  &:before {
+    content: $logo-zingat;     
+    color: #009cfb;
+  }
+}
+.logo-zoom {
+  &:before {
+    content: $logo-zoom;     
+    color: #2d8cff;
+  }
+}
+.logo-zorin {
+  &:before {
+    content: $logo-zorin;     
+    color: #0cc1f3;
+  }
+}
+.logo-zulip {
+  &:before {
+    content: $logo-zulip;     
+    color: #52c2af;
+  }
+}
+
