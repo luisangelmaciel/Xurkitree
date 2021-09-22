@@ -1,0 +1,88 @@
+/* Demo Stuff */
+*,:before,:after{
+-moz-box-sizing:border-box;
+-webkit-box-sizing:border-box;
+box-sizing:border-box;
+}
+
+h1, h2 {
+  text-align: center;
+  line-height: 20px
+}
+h1 {
+    color: rgba(0,0,0,.8);
+}
+
+h2 {
+  color: rgba(0,0,0,.2);
+}
+
+.social-container {
+	margin:0 auto;
+  padding: 40px 0;
+	width:200px;
+  height:100%;
+}
+
+/* Add this ID to a section or something you want to change the background-color */
+#social-section {
+  padding:60px 0;
+  -webkit-transition: all .2s ease-out;
+-moz-transition: all .2s ease-out;
+-ms-transition: all .2s ease-out;
+-o-transition: all .2s ease-out;
+transition: all .2s ease-out;
+}
+
+/* Button Styles */
+.social-container a {
+display: block;
+width:200px;
+line-height: 40px;
+border: 1px solid rgba(0,0,0,.1);
+color: rgba(0,0,0,.6);
+margin:20px 0;
+text-decoration: none;
+text-align:center;
+}
+
+.social-container a i {
+margin-right: 15px;   
+}
+
+.social-container a:hover  {
+border: 1px solid rgba(255,255,255,.3);
+color: rgba(255,255,255,.6);
+}
+
+/* Hover background colors */
+.color-twitter {
+  background-color: #00aced !important;
+}
+.color-facebook {
+  background-color: #3b5998 !important;
+}
+.color-pinterest {
+  background-color: #cc2127 !important;
+}
+.color-googleplus {
+  background-color: #dd4b39 !important;
+}
+.color-dribbble {
+  background-color: #ea4c89 !important;
+}
+.color-instagram {
+  background-color: #417399 !important;
+}
+
+.color-twitter,
+.color-facebook,
+.color-pinterest,
+.color-googleplus,
+.color-dribbble,
+.color-instagram {
+-webkit-transition: all .2s ease-in;
+-moz-transition: all .2s ease-in;
+-ms-transition: all .2s ease-in;
+-o-transition: all .2s ease-in;
+transition: all .2s ease-in;
