@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,600');
+
+html {
+  font-size: 10px;
+  background: -webkit-linear-gradient(to top, #1a284f 0%, #2b1b37 100%);
+  background: -moz-gradient(to top, #1a284f 0%, #2b1b37 100%);
+  background: linear-gradient(to top, #1a284f 0%, #2b1b37 100%);
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  width: 100vw;
+  height: 100vh;
+}
+
+.keys {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-content: center;
+  align-content: center;
+}
+
+.key {
+  border: .2rem solid #3697ca;
+  border-radius: .8rem;
+  margin: 1rem;
+  font-size: 1.5rem;
+  padding: 1rem .5rem;
+  transition: all .07s ease;
+  width: 10rem;
+  text-align: center;
+  color: #fff;
+  background: transparent;
+}
+
+.playing {
+  transform: scale(1.1);
+  border-color: #7adcff;
+  box-shadow: 0 0 1rem #7adcff;
+  background: rgba(255,255,255,0.05);
+}
+
+.playing .sound {
+  color: #7adcff;
+}
+
+kbd {
+  display: block;
+  font-size: 4rem;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+}
+
+.sound {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: .1rem;
+  color: #3697ca;
+}
