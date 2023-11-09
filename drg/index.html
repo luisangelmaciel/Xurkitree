@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Linktr.ee Dragvesti</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="icon" href="/favicon.png" sizes="192x192">
+
+    <!-- UI Google-->
+    <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
+    <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+
+    <!-- Icons -->
+    <script src="https://kit.fontawesome.com/ad4c66034e.js" crossorigin="anonymous"></script>
+    <!-- Galeria en https://fontawesome.com/icons?d=gallery-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome-animation/0.2.1/font-awesome-animation.min.css'>
+
+    <style>
+        @font-face {
+            font-family: 'Material Icons';
+            font-style: normal;
+            font-weight: 400;
+            src: url(https://example.com/MaterialIcons-Regular.eot);
+            /* For IE6-8 */
+            src: local('Material Icons'), local('MaterialIcons-Regular'), url(https://example.com/MaterialIcons-Regular.woff2) format('woff2'), url(https://example.com/MaterialIcons-Regular.woff) format('woff'), url(https://example.com/MaterialIcons-Regular.ttf) format('truetype');
+        }
+        
+        .material-icons {
+            font-family: 'Material Icons';
+            font-weight: normal;
+            font-style: normal;
+            font-size: 24px;
+            /* Preferred icon size */
+            display: inline-block;
+            line-height: 1;
+            text-transform: none;
+            letter-spacing: normal;
+            word-wrap: normal;
+            white-space: nowrap;
+            direction: ltr;
+            /* Support for all WebKit browsers. */
+            -webkit-font-smoothing: antialiased;
+            /* Support for Safari and Chrome. */
+            text-rendering: optimizeLegibility;
+            /* Support for Firefox. */
+            -moz-osx-font-smoothing: grayscale;
+            /* Support for IE. */
+            font-feature-settings: 'liga';
+        }
+        /* Rules for sizing the icon. */
+        
+        .material-icons.md-18 {
+            font-size: 18px;
+        }
+        
+        .material-icons.md-24 {
+            font-size: 24px;
+        }
+        
+        .material-icons.md-36 {
+            font-size: 36px;
+        }
+        
+        .material-icons.md-48 {
+            font-size: 48px;
+        }
+        /* Rules for using icons as black on a light background. */
+        
+        .material-icons.md-dark {
+            color: rgba(0, 0, 0, 0.54);
+        }
+        
+        .material-icons.md-dark.md-inactive {
+            color: rgba(0, 0, 0, 0.26);
+        }
+        /* Rules for using icons as white on a dark background. */
+        
+        .material-icons.md-light {
+            color: rgba(255, 255, 255, 1);
+        }
+        
+        .material-icons.md-light.md-inactive {
+            color: rgba(255, 255, 255, 0.3);
+        }
+        
+        .material-icons.md-18 {
+            font-size: 18px;
+        }
+        
+        .material-icons.md-24 {
+            font-size: 24px;
+        }
+        
+        .material-icons.md-36 {
+            font-size: 36px;
+        }
+        
+        .material-icons.md-48 {
+            font-size: 48px;
+        }
+        
+        .material-icons.md-dark {
+            color: rgba(0, 0, 0, 0.54);
+        }
+        
+        .material-icons.md-dark.md-inactive {
+            color: rgba(0, 0, 0, 0.26);
+        }
+        
+        .material-icons.md-light {
+            color: rgba(255, 255, 255, 1);
+        }
+        
+        .material-icons.md-light.md-inactive {
+            color: rgba(255, 255, 255, 0.3);
+        }
+        
+        .material-icons.orange600 {
+            color: #FB8C00;
+        }
+        /* ico bar */
+        
+        .icon-bar {
+            width: 100%;
+            background-color: #ffffff;
+            overflow: auto position: fixed;
+            font-size: 20pt;
+        }
+        
+        .icon-bar a {
+            float: left;
+            width: 20%;
+            text-align: center;
+            padding: 6px 0;
+            transition: all 0.3s ease;
+            color: #bfbfbf;
+            background-color: #ffffff;
+        }
+        
+        .footerx {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: white;
+            color: white;
+            text-align: center;
+            font-size: 20pt;
+        }
+        
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Roboto', sans-serif;
+        }
+        
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        
+        section {
+            padding: 30px 0;
+        }
+        
+        .shadow3 {
+            background-image: url("img/shadow3.png");
+            background-repeat: no-repeat;
+        }
+        
+        .badge-info {
+            background-color: rgba(23, 160, 184, 0.17);
+            color: #17a2b8;
+        }
+        
+        .section-title .badge {
+            margin: 0 0 8px;
+        }
+        
+        .badge {
+            border-radius: 100px;
+            font-size: 12px;
+            font-stretch: normal;
+            font-style: normal;
+            font-weight: 500;
+            letter-spacing: 1px;
+            line-height: normal;
+            padding: 4px 14px;
+        }
+        
+        .h1,
+        .h2,
+        .h3,
+        .h4,
+        .h5,
+        .h6,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            color: #3f345f;
+        }
+        
+        h2 {
+            font-size: 36px;
+        }
+        
+        .social-overlap {
+            position: absolute;
+            width: 100%;
+            transform: translateY(-50%);
+        }
+        
+        .justify-content-center {
+            -ms-flex-pack: center!important;
+            justify-content: center!important;
+        }
+        
+        .justify-content-center {
+            -webkit-box-pack: center!important;
+            -ms-flex-pack: center!important;
+            justify-content: center!important;
+        }
+        
+        .social-bar {
+            display: flex;
+            border-radius: 10px;
+            background: #fff;
+            box-shadow: 0 0 60px rgba(93, 70, 232, 0.15);
+            border: 1px solid#ebe9e9;
+        }
+        
+        .iconpad {
+            padding: 12px 0;
+            width: 100%;
+        }
+        
+        .mb-3,
+        .my-3 {
+            margin-bottom: 1rem!important;
+        }
+        
+        .process-scetion .slider-nav-item {
+            position: relative;
+            flex-grow: 0;
+            flex-shrink: 0;
+            border-radius: 50%;
+            text-align: center;
+            background: #fff;
+            cursor: pointer;
+            transition: all .4s ease;
+        }
+        
+        .social-icons a {
+            border-radius: 50px;
+            color: #3f345f;
+            display: inline-block;
+            line-height: 52px;
+            height: 50px;
+            width: 50px;
+            box-shadow: 0 5px 25px rgba(93, 70, 232, 0.15);
+            margin: 15px 15px;
+            font-size: 22px;
+        }
+        
+        a {
+            text-decoration: none !important;
+            color: #3f345f;
+            transition: all 0.3s ease 0s;
+        }
+        
+        .slider-nav-item:before {
+            position: absolute;
+            content: "";
+            height: calc(100% + 16px);
+            width: calc(100% + 16px);
+            top: -8px;
+            left: -8px;
+            border-radius: 50%;
+            border: 1px solid rgba(132, 132, 164, 0.35);
+            animation: 1.5s linear 0s normal none infinite focuse;
+        }
+        /*socil*/
+        
+        .slider-nav {
+            display: flex;
+        }
+        
+        .process-scetion .slider-nav-item {
+            position: relative;
+            flex-grow: 0;
+            flex-shrink: 0;
+            border-radius: 50%;
+            text-align: center;
+            background: #fff;
+            cursor: pointer;
+            transition: all .4s ease;
+        }
+        
+        .slider-nav-item:before {
+            position: absolute;
+            content: "";
+            height: calc(100% + 16px);
+            width: calc(100% + 16px);
+            top: -8px;
+            left: -8px;
+            border-radius: 50%;
+            border: 1px solid rgba(132, 132, 164, 0.35);
+            animation: 1.5s linear 0s normal none infinite focuse;
+        }
+        
+        .process-scetion .slider-nav-item:nth-child(2) {
+            color: #40beff;
+        }
+        
+        .process-scetion .slider-nav-item:nth-child(3) {
+            color: #311f9b;
+        }
+        
+        .process-scetion .slider-nav-item:nth-child(4) {
+            color: #ff9259;
+        }
+        
+        .process-scetion .slider-nav-item:nth-child(5) {
+            color: #38385f;
+        }
+        
+        .process-scetion .slider-nav-item:after {
+            position: absolute;
+            top: 50%;
+            left: 100%;
+            height: 2px;
+            content: '';
+            width: 100%;
+            background: url(img/line.png) repeat 0 0;
+            z-index: 0;
+            animation: slide 1s linear infinite;
+        }
+        
+        .process-scetion .slider-nav-item:last-child:after {
+            display: none;
+        }
+        
+        .process-scetion .slider-nav-item .ikon {
+            font-size: 50px;
+            line-height: 80px;
+        }
+        
+        .process-scetion .slider-nav-item.active:before {
+            position: absolute;
+            content: "";
+            height: calc(100% + 16px);
+            width: calc(100% + 16px);
+            top: -8px;
+            left: -8px;
+            border-radius: 50%;
+            border: 1px solid rgba(132, 132, 164, 0.35);
+            animation: 1.5s linear 0s normal none infinite focuse;
+        }
+        
+        @keyframes focuse {
+            0% {
+                transform: scale(0.8);
+                opacity: 1;
+            }
+            75% {
+                transform: scale(1.2);
+                opacity: 0;
+            }
+            100% {
+                transform: scale(1.2);
+                opacity: 0;
+            }
+        }
+        
+        @keyframes slide {
+            from {
+                background-position: 0 0;
+            }
+            to {
+                background-position: 40px 0;
+            }
+        }
+        
+        .shadow-img1 {
+            background-image: url("../img/shadow.png");
+            background-repeat: no-repeat;
+            background-position: bottom;
+        }
+        
+        .shadow-img2 {
+            background-position: bottom;
+            background-image: url("../img/shadow2.png");
+            background-size: 100%;
+            background-repeat: no-repeat;
+        }
+        
+        .slider-nav-item:after {
+            position: absolute;
+            top: 50%;
+            left: 100%;
+            height: 2px;
+            content: '';
+            width: 100%;
+            background: url(img/lineb.png) repeat 0 0;
+            z-index: 0;
+            animation: slide 1s linear infinite;
+        }
+        
+        .mt100 {
+            margin-top: 100px;
+        }
+        /* ----------------------------------------------
+ * Generated by Animista on 2019-9-24 11:37:28
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+        /**
+ * ----------------------------------------
+ * animation jello-horizontal
+ * ----------------------------------------
+ */
+        
+        @-webkit-keyframes jello-horizontal {
+            0% {
+                -webkit-transform: scale3d(1, 1, 1);
+                transform: scale3d(1, 1, 1);
+            }
+            30% {
+                -webkit-transform: scale3d(1.25, 0.75, 1);
+                transform: scale3d(1.25, 0.75, 1);
+            }
+            40% {
+                -webkit-transform: scale3d(0.75, 1.25, 1);
+                transform: scale3d(0.75, 1.25, 1);
+            }
+            50% {
+                -webkit-transform: scale3d(1.15, 0.85, 1);
+                transform: scale3d(1.15, 0.85, 1);
+            }
+            65% {
+                -webkit-transform: scale3d(0.95, 1.05, 1);
+                transform: scale3d(0.95, 1.05, 1);
+            }
+            75% {
+                -webkit-transform: scale3d(1.05, 0.95, 1);
+                transform: scale3d(1.05, 0.95, 1);
+            }
+            100% {
+                -webkit-transform: scale3d(1, 1, 1);
+                transform: scale3d(1, 1, 1);
+            }
+        }
+        
+        @keyframes jello-horizontal {
+            0% {
+                -webkit-transform: scale3d(1, 1, 1);
+                transform: scale3d(1, 1, 1);
+            }
+            30% {
+                -webkit-transform: scale3d(1.25, 0.75, 1);
+                transform: scale3d(1.25, 0.75, 1);
+            }
+            40% {
+                -webkit-transform: scale3d(0.75, 1.25, 1);
+                transform: scale3d(0.75, 1.25, 1);
+            }
+            50% {
+                -webkit-transform: scale3d(1.15, 0.85, 1);
+                transform: scale3d(1.15, 0.85, 1);
+            }
+            65% {
+                -webkit-transform: scale3d(0.95, 1.05, 1);
+                transform: scale3d(0.95, 1.05, 1);
+            }
+            75% {
+                -webkit-transform: scale3d(1.05, 0.95, 1);
+                transform: scale3d(1.05, 0.95, 1);
+            }
+            100% {
+                -webkit-transform: scale3d(1, 1, 1);
+                transform: scale3d(1, 1, 1);
+            }
+        }
+        
+        .jello-horizontal {
+            -webkit-animation: jello-horizontal 0.9s both;
+            animation: jello-horizontal 0.9s both;
+        }
+        
+        .social-bar a:hover i {
+            -webkit-animation: jello-horizontal 0.9s both;
+            animation: jello-horizontal 0.9s both;
+        }
+        
+        @media only screen and (max-width: 300px) {
+            .process-scetion .slider-nav-item {
+                height: 30px;
+                width: 30px;
+                margin: 15px 10px;
+                line-height: 28px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <section class="trial-block shadow3">
+        <div class="section-title text-center">
+            <span class="badge badge-info">DragLink</span>
+            <center>
+                <h3 style="color: black;">
+                    <br>Dragvesti</h3>
+                <span class="section-title-line section-title-line"></span>
+            </center>
+        </div>
+        <br>
+        <div class="social-overlap process-scetion mt100">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-10">
+                        <div class="social-bar">
+                            <div class="social-icons mb-3 iconpad text-center">
+                                <a href="https://www.facebook.com/dragvesti" target="_blank class=" slider-nav-item "><i class="fab fa-facebook "></i></a>
+                                <a href="https://www.twitter-com/dragvesti_ " target="_blank " class="slider-nav-item "><i class="fab fa-twitter "></i></a>
+                                <a href="https://www.instagram/dragvesti " target="_blank " class="slider-nav-item "><i class="fab fa-instagram "></i></a>
+                                <a href="https://www.youtube.com/dragvesti " target="_blank " class="slider-nav-item "><i class="fab fa-youtube "></i></a>
+                                <a href="https://www.pinterest.com.mx/dragvesti " target="_blank " class="slider-nav-item "><i class="fab fa-pinterest "></i></a>
+                                <a href="https://dragvesti.xiiber.com " target="_blank " class="slider-nav-item "><i class="bi bi-cup-straw "></i></a>
+                                <a href="https://dragvesti.github.io/hihello/ " target="_blank " class="slider-nav-item "><i class="bi bi-house-door "></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- partial -->
+            <div class="footerx ">
+                <div class="icon-bar ">
+                    <a href="index.html " aria-lebel="Avatar "><i class="bi bi-exclamation-circle " ></i></a>
+                    <a href="index.html " aria-lebel="Avatar "><i class="bi bi-cup-straw " ></i></a>
+                    <a href="index.html " aria-lebel="Avatar "><i class="bi bi-house-door "  ></i></a>
+                    <a href="index.html " aria-lebel="Avatar "><i class="bi bi-journal-richtext "  ></i></a>
+                    <a href="index.html " aria-lebel="Avatar "><i class="bi bi-arrow-90deg-left "></i></a>
+                </div>
+            </div>
+            <script src='https://cdnjs.cloudflare.com/ajax/libs/fontawesome-iconpicker/3.2.0/js/fontawesome-iconpicker.min.js'></script>
+</body>
+
+</html>
